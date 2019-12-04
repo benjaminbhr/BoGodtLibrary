@@ -46,6 +46,7 @@
     <Compile Include="BathroomWindow.cs" />
     <Compile Include="DoorTypeEnum.cs" />
     <Compile Include="FloorTypeEnum.cs" />
+    <Compile Include="IEntrance.cs" />
     <Compile Include="IMasterRoom.cs" />
     <Compile Include="IMasterWindow.cs" />
     <Compile Include="RoomDoor.cs" />
