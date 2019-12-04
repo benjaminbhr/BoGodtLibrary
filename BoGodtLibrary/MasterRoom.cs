@@ -10,6 +10,7 @@ namespace BoGodtLibrary
     {
         public abstract ERoomType GetRoomType();
         public abstract bool IsNew();
+
         public List<IMasterWindow> windows = new List<IMasterWindow>();
         public List<IMasterWindow> GetWindows()
         {
