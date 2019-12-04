@@ -13,6 +13,7 @@ namespace BoGodtLibrary
             return ERoomType.Entrance;
         }
 
+
         //Do we need this? And the interface at all?
         public void MyMethod(ERoomType Entrance)
         {
