@@ -11,7 +11,7 @@ namespace BoGodtLibrary
         EWindowType GetWindowType();
         EWindowMaterial GetWindowMaterial();
         EColor GetColor();
-        bool CanWindowOpen();
+        void CanWindowOpen(bool canwindowopen);
         bool IsWindowFrosted();
     }
 }

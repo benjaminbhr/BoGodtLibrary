@@ -8,9 +8,10 @@ namespace BoGodtLibrary
 {
     public abstract class MasterDoor : IMasterDoor
     {
-        public abstract int DoorMaterial();
-        public abstract int DoorType();
+        public abstract EDoorMaterial GetDoorMaterial();
+        public abstract EColor GetColor();
         public abstract bool CanDoorOpen();
         public abstract EDoorType GetDoorType();
+        public abstract bool IsLockable();
     }
 }

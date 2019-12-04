@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public enum EDoorMaterial
+    interface IFloor
     {
-        Wooden = 1,
-        Metallic = 2,
-        Glass = 3,
+        EFloorType GetFloorType();
+        EColor GetColor();
     }
 }
