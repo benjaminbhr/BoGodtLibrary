@@ -14,6 +14,16 @@ namespace BoGodtLibrary
             this.windowopen = canwindowopen;
         }
 
+        public override EColor GetColor()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override EWindowMaterial GetWindowMaterial()
+        {
+            throw new NotImplementedException();
+        }
+
         public override EWindowType GetWindowType()
         {
             return EWindowType.Medium;
@@ -23,5 +33,6 @@ namespace BoGodtLibrary
         {
             return false;
         }
+
     }
 }
