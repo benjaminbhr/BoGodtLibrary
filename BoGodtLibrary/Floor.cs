@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    class Floor : IFloor
+    public class Floor : IFloor
     {
         public EColor GetColor()
         {
             throw new NotImplementedException();
         }
+
 
         public EFloorType GetFloorType()
         {
