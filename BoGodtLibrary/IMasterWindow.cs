@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    interface IMasterWindow
+    public interface IMasterWindow
     {
         EWindowType GetWindowType();
         EWindowMaterial GetWindowMaterial();
