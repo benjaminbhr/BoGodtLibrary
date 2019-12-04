@@ -16,7 +16,6 @@ namespace BoGodtLibrary
         {
             return true;
         }
-        public List<IMasterWindow> windows = new List<IMasterWindow>();
         public void AddWindows()
         {
             if (MaxWindows >= 1)
