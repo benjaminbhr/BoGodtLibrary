@@ -30,5 +30,6 @@ namespace BoGodtLibrary
             }
         }
         int MaxWindows = 0;
+        int x;
     }
 }
