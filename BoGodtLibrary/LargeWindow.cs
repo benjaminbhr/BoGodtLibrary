@@ -6,31 +6,27 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public class LargeWindow : IMasterWindow
+    public class LargeWindow : MasterWindow
     {
-        public void CanWindowOpen(bool canwindowopen)
+
+        public override EColor GetColor()
         {
             throw new NotImplementedException();
         }
 
-        public EColor GetColor()
+        public override EWindowMaterial GetWindowMaterial()
         {
             throw new NotImplementedException();
         }
 
-        public EWindowMaterial GetWindowMaterial()
+        public override EWindowType GetWindowType()
         {
             throw new NotImplementedException();
         }
 
-        EWindowType IMasterWindow.GetWindowType()
+        public override bool IsWindowFrosted()
         {
-            return EWindowType.Large;
-        }
-
-        bool IMasterWindow.IsWindowFrosted()
-        {
-            return false;
+            throw new NotImplementedException();
         }
     }
 }

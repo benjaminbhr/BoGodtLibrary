@@ -24,10 +24,8 @@ namespace BoGodtLibrary
             }
             else
             {
-                MasterWindow vindue = new MediumWindow();
-                vindue.CanWindowOpen(true);
+                MediumWindow vindue = new MediumWindow();
                 windows.Add(vindue);
-                MaxWindows++;
             }
         }
 

@@ -9,10 +9,6 @@ namespace BoGodtLibrary
     public class SmallWindow : MasterWindow
     {
 
-        public override void CanWindowOpen(bool canwindowopen)
-        {
-            throw new NotImplementedException();
-        }
 
         public override EColor GetColor()
         {
