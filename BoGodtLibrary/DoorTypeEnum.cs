@@ -8,7 +8,7 @@ namespace BoGodtLibrary
 {
     public enum EDoorType
     {
-        FrontDoor = 1,
+        FrontDoor = 5,
         BackDoor = 2,
         RoomDoor = 3,
     }
