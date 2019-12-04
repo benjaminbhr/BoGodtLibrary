@@ -6,17 +6,16 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public class Kitchen : MasterRoom
+    public class Kitchen : MasterRoom, IKitchen
     {
         public override ERoomType GetRoomType()
         {
             return ERoomType.Kitchen;
         }
-        public override bool IsNew()
+        public bool IsNew()
         {
             return true;
         }
-        public List<IMasterWindow> windows = new List<IMasterWindow>();
         public void AddWindows()
         {
             if (MaxWindows >= 1)
