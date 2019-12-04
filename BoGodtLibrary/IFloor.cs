@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public interface IKitchen
+    interface IFloor
     {
-        bool IsNew();
+        EFloorType GetFloorType();
+        EColor GetColor();
     }
 }

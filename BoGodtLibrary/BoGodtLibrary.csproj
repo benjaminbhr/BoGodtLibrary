@@ -47,8 +47,11 @@
     <Compile Include="ColorEnum.cs" />
     <Compile Include="DoorMaterialEnum.cs" />
     <Compile Include="DoorTypeEnum.cs" />
+    <Compile Include="Entrance.cs" />
     <Compile Include="FloorTypeEnum.cs" />
     <Compile Include="IEntrance.cs" />
+    <Compile Include="IFloor.cs" />
+    <Compile Include="IKitchen.cs" />
     <Compile Include="IMasterDoor.cs" />
     <Compile Include="IMasterRoom.cs" />
     <Compile Include="IMasterWindow.cs" />
