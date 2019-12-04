@@ -12,17 +12,21 @@ namespace BoGodtLibrary
         {
             return EDoorType.RoomDoor;
         }
-        public override int DoorMaterial()
+        public override EDoorMaterial GetDoorMaterial()
         {
-            return 5;
-        }
-        public override int DoorType()
-        {
-            return 6;
+            return EDoorMaterial.Metallic;
         }
         public override bool CanDoorOpen()
         {
             return true;
+        }
+        public override EColor GetColor()
+        {
+            return EColor.ColorYellow;
+        }
+        public override bool IsLockable()
+        {
+            return false;
         }
     }
 }

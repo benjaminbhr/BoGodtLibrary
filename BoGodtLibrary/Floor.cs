@@ -13,6 +13,7 @@ namespace BoGodtLibrary
             throw new NotImplementedException();
         }
 
+
         public EFloorType GetFloorType()
         {
             throw new NotImplementedException();
