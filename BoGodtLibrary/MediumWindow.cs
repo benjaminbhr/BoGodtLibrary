@@ -8,9 +8,10 @@ namespace BoGodtLibrary
 {
     public class MediumWindow : MasterWindow
     {
-        public override bool CanWindowOpen()
+        public bool windowopen { get; set; }
+        public override void CanWindowOpen(bool canwindowopen)
         {
-            return true;
+            this.windowopen = canwindowopen;
         }
 
         public override EWindowType GetWindowType()
