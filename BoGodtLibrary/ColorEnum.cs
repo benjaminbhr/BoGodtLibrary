@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public enum EDoorType
+    public enum EColor
     {
-        FrontDoor = 1,
-        BackDoor = 2,
-        RoomDoor = 3,
     }
 }
