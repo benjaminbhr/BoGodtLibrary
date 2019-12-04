@@ -50,6 +50,8 @@
     <Compile Include="IEntrance.cs" />
     <Compile Include="IMasterRoom.cs" />
     <Compile Include="IMasterWindow.cs" />
+    <Compile Include="LivingRoom.cs" />
+    <Compile Include="Room.cs" />
     <Compile Include="RoomDoor.cs" />
     <Compile Include="RoomTypeEnum.cs" />
     <Compile Include="FrontDoor.cs" />
