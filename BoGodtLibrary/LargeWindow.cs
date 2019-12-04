@@ -8,9 +8,19 @@ namespace BoGodtLibrary
 {
     public class LargeWindow : IMasterWindow
     {
-        bool IMasterWindow.CanWindowOpen()
+        public void CanWindowOpen(bool canwindowopen)
         {
-            return true;
+            throw new NotImplementedException();
+        }
+
+        public EColor GetColor()
+        {
+            throw new NotImplementedException();
+        }
+
+        public EWindowMaterial GetWindowMaterial()
+        {
+            throw new NotImplementedException();
         }
 
         EWindowType IMasterWindow.GetWindowType()

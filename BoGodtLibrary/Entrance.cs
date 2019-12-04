@@ -13,10 +13,6 @@ namespace BoGodtLibrary
             return ERoomType.Entrance;
         }
 
-        public override bool IsNew()
-        {
-            throw new NotImplementedException();
-        }
 
     }
 }
