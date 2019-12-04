@@ -8,5 +8,6 @@ namespace BoGodtLibrary
 {
     public enum EColor
     {
+        ColorWed = 1,
     }
 }
