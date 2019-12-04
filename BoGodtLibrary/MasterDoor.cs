@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public abstract class MasterDoor:IMasterDoor
+    public abstract class MasterDoor : IMasterDoor
     {
         public abstract int DoorMaterial();
         public abstract int DoorType();
