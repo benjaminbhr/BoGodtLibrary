@@ -19,5 +19,10 @@ namespace BoGodtLibrary
         {
             return doors;
         }
+        public List<IFloor> floors = new List<IFloor>();
+        public List<IFloor> GetFloorType()
+        {
+            return floors;
+        }
     }
 }
