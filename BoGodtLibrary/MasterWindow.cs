@@ -13,5 +13,6 @@ namespace BoGodtLibrary
         public abstract EWindowMaterial GetWindowMaterial();
         public abstract EColor GetColor();
         public abstract EWindowType GetWindowType();
+        
     }
 }
