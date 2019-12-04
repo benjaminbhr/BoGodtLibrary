@@ -10,6 +10,8 @@ namespace BoGodtLibrary
     {
         public abstract bool CanWindowOpen();
         public abstract bool IsWindowFrosted();
+        public abstract EWindowMaterial GetWindowMaterial();
+        public abstract EColor GetColor();
         public abstract EWindowType GetWindowType();
         
     }
