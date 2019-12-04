@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public class LivingRoom : MasterRoom
+    public interface IKitchen
     {
-        public override ERoomType GetRoomType()
-        {
-            return ERoomType.LivingRoom;
-        }
-
-
+        bool IsNew();
     }
 }
