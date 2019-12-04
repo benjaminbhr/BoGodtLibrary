@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public enum EDoorType
+    interface IEntrance
     {
-        FrontDoor = 1,
-        BackDoor = 2,
-        RoomDoor = 3,
+        void MyMethod(ERoomType Entrance);
     }
 }

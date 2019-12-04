@@ -11,5 +11,6 @@ namespace BoGodtLibrary
         public abstract bool CanWindowOpen();
         public abstract bool IsWindowFrosted();
         public abstract EWindowType GetWindowType();
+        
     }
 }
