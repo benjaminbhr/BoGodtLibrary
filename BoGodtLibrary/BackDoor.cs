@@ -28,7 +28,7 @@ namespace BoGodtLibrary
 
         public override bool IsLockable()
         {
-            throw new NotImplementedException();
+            return false;
         }
     }
 }
