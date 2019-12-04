@@ -22,7 +22,7 @@ namespace BoGodtLibrary
         }
         public override EColor GetColor()
         {
-            return EColor.ColorWed;
+            return EColor.ColorBlack;
         }
         public override bool IsLockable()
         {
