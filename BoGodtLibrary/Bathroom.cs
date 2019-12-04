@@ -10,12 +10,27 @@ namespace BoGodtLibrary
     {
         public override ERoomType GetRoomType()
         {
-            return ERoomType.Kitchen;
+            return ERoomType.Bathroom;
         }
-        public override bool IsNew()
+        public bool IsNew()
         {
             return true;
         }
-        public List<IMasterWindow> windows = new List<IMasterWindow>();
+        public void AddWindows()
+        {
+            if (MaxWindows >= 1)
+            {
+                throw new Exception("Too many windows :(");
+            }
+            else
+            {
+                MasterWindow vindue = new MediumWindow();
+                vindue.CanWindowOpen(true);
+                windows.Add(vindue);
+                MaxWindows++;
+            }
+        }
+
+        int MaxWindows = 0;
     }
 }
