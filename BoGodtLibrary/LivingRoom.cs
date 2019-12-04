@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public enum EColor
+    public class LivingRoom : MasterRoom
     {
-        ColorWed = 1,
+        public override ERoomType GetRoomType()
+        {
+            return ERoomType.LivingRoom;
+        }
+
+
     }
 }

@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public enum EColor
+    public enum EDoorMaterial
     {
-        ColorWed = 1,
     }
 }

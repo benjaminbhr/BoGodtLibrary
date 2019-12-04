@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public interface IMasterWindow
+    public interface IMasterDoor
     {
-        EWindowType GetWindowType();
-        EWindowMaterial GetWindowMaterial();
+        EDoorType GetDoorType();
+        EDoorMaterial GetDoorMaterial();
         EColor GetColor();
-        bool CanWindowOpen();
-        bool IsWindowFrosted();
+        bool IsLockable();
     }
 }

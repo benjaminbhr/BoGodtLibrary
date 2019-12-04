@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public enum EColor
+    public interface IKitchen
     {
-        ColorWed = 1,
+        bool IsNew();
     }
 }
