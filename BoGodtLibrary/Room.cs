@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    class Room
+    class Room : MasterRoom
     {
+        public override ERoomType GetRoomType()
+        {
+            return ERoomType.Room;
+        }
     }
 }
