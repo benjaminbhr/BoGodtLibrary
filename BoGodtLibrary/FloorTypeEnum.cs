@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    enum EFloorType
+    public enum EFloorType
     {
 
     }

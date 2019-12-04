@@ -23,12 +23,12 @@ namespace BoGodtLibrary
 
         public override EColor GetColor()
         {
-            return EColor.ColorWed;
+            return EColor.ColorRed;
         }
 
         public override bool IsLockable()
         {
-            throw new NotImplementedException();
+            return false;
         }
     }
 }

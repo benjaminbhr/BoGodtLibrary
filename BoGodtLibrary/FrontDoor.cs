@@ -20,15 +20,13 @@ namespace BoGodtLibrary
         {
             return true;
         }
-
         public override EColor GetColor()
         {
-            throw new NotImplementedException();
+            return EColor.ColorBlack;
         }
-
         public override bool IsLockable()
         {
-            throw new NotImplementedException();
+            return true;
         }
     }
 }

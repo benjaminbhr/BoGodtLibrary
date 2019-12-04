@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    interface IMasterRoom
+    public interface IMasterRoom
     {
         ERoomType GetRoomType();
         List<IMasterWindow> GetWindows();
-
+        List<IFloor> GetFloorType();
     }
 }
