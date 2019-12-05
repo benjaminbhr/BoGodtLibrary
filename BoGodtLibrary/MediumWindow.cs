@@ -23,10 +23,5 @@ namespace BoGodtLibrary
             return EWindowType.Medium;
         }
 
-        public override bool IsWindowFrosted()
-        {
-            return false;
-        }
-
     }
 }

@@ -24,9 +24,5 @@ namespace BoGodtLibrary
             throw new NotImplementedException();
         }
 
-        public override bool IsWindowFrosted()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

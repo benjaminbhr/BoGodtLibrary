@@ -24,9 +24,5 @@ namespace BoGodtLibrary
         {
             return EWindowType.Small;
         }
-        public override bool IsWindowFrosted()
-        {
-            return false;
-        }
     }
 }
