@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public enum EColor
+    public interface IMediumWindow
     {
-        ColorRed = 1,
-        ColorBlack = 2,
-        ColorYellow = 3,
-        ColorWhite = 4,
+        EWindowCasement Setwindowcasement
+        {
+            get;
+            set;
+        }
     }
 }

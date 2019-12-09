@@ -8,6 +8,10 @@ namespace BoGodtLibrary
 {
     public enum EWindowMaterial
     {
-
+        WoodBirch,
+        WoodOak,
+        Woodmahogany,
+        Plastic,
+        Aluminium,
     }
 }

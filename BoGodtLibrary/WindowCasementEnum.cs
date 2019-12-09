@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public enum EColor
+    public enum EWindowCasement
     {
-        ColorRed = 1,
-        ColorBlack = 2,
-        ColorYellow = 3,
-        ColorWhite = 4,
+        Casementone = 1,
+        Casementtwo = 2,
+        Casementthree = 3,
     }
 }
