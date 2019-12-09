@@ -8,17 +8,14 @@ namespace BoGodtLibrary
 {
     public class RoomDoor:MasterDoor
     {
-        public override EDoorType GetDoorType()
+        public EDoorType GetDoorType()
         {
             return EDoorType.RoomDoor;
         }
-        public override EDoorMaterial GetDoorMaterial()
+
+        public RoomDoor()
         {
-            return EDoorMaterial.Metallic;
-        }
-        public override EColor GetColor()
-        {
-            return EColor.ColorYellow;
+
         }
     }
 }

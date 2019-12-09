@@ -8,8 +8,10 @@ namespace BoGodtLibrary
 {
     public enum EDoorMaterial
     {
-        Wooden = 1,
-        Metallic = 2,
-        Glass = 3,
+        WoodBirch,
+        WoodOak,
+        WoodMahogany,
+        Plastic,
+        Aluminium,
     }
 }

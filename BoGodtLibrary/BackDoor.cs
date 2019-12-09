@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public class BackDoor:MasterDoor
+    public class BackDoor : MasterDoor
     {
-        public override EDoorType GetDoorType()
+        public EDoorType GetDoorType()
         {
             return EDoorType.BackDoor;
         }
-        public override EDoorMaterial GetDoorMaterial()
+
+        public BackDoor()
         {
-            return EDoorMaterial.Glass;
-        }
-        public override EColor GetColor()
-        {
-            return EColor.ColorRed;
+
         }
     }
 }

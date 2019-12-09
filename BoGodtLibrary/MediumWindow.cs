@@ -13,6 +13,5 @@ namespace BoGodtLibrary
         {
             return EWindowType.Medium;
         }
-
     }
 }

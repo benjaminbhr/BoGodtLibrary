@@ -8,22 +8,39 @@ namespace BoGodtLibrary
 {
     public abstract class MasterDoor : IMasterDoor
     {
-        public abstract EDoorMaterial GetDoorMaterial();
-        public abstract EColor GetColor();
-        public abstract EDoorType GetDoorType();
-
-        private bool _SetDoorOpen;
-        public bool SetDoorOpen
+        private EDoorMaterial _SetDoorMaterial = EDoorMaterial.WoodMahogany;
+        public EDoorMaterial SetDoorMaterial
         {
-            get => _SetDoorOpen;
-            set => _SetDoorOpen = value;
+            get => _SetDoorMaterial;
+            set => _SetDoorMaterial = value;
         }
 
-        private bool _SetDoorLockable;
+        private EColor doorColor = EColor.ColorWhite; 
+        public EColor SetDoorColor
+        {
+            get => doorColor;
+            set => doorColor = value;
+        }
+
+        private EDoorType DoorType = EDoorType.RoomDoor;
+        public EDoorType SetDoorType
+        {
+            get => DoorType;
+            set => DoorType = value;
+        }
+
+        private bool DoorOpen = true;
+        public bool SetDoorOpen
+        {
+            get => DoorOpen;
+            set => DoorOpen = value;
+        }
+
+        private bool DoorLockable = true;
         public bool SetDoorLockable
         {
-            get => _SetDoorLockable;
-            set => _SetDoorLockable = value;
+            get => DoorLockable;
+            set => DoorLockable = value;
         }
     }
 }
