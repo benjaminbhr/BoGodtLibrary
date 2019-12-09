@@ -23,7 +23,6 @@ namespace BoGodtLibrary
             bathroomwindow.Setwindowfrosted = true;
             bathroomwindow.Setwindowopen = false;
             windows.Add(bathroomwindow);
-
         }
         int MaxWindows = 0;
     }
