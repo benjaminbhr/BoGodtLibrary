@@ -10,6 +10,7 @@ namespace BoGodtLibrary
     {
         public abstract EDoorMaterial GetDoorMaterial();
         public abstract EColor GetColor();
+        public abstract EDoorType GetDoorType();
 
         private bool _SetDoorOpen;
         public bool SetDoorOpen
@@ -17,7 +18,6 @@ namespace BoGodtLibrary
             get => _SetDoorOpen;
             set => _SetDoorOpen = value;
         }
-        public abstract EDoorType GetDoorType();
 
         private bool _SetDoorLockable;
         public bool SetDoorLockable
