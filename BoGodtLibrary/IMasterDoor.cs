@@ -8,9 +8,21 @@ namespace BoGodtLibrary
 {
     public interface IMasterDoor
     {
-        EDoorType GetDoorType();
-        EDoorMaterial GetDoorMaterial();
-        EColor GetColor();
+        EDoorType SetDoorType
+        {
+            get;
+            set;
+        }
+        EDoorMaterial SetDoorMaterial
+        {
+            get;
+            set;
+        }
+        EColor SetDoorColor
+        {
+            get;
+            set;
+        }
         bool SetDoorLockable
         {
             get;

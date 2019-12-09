@@ -8,17 +8,14 @@ namespace BoGodtLibrary
 {
     public class FrontDoor:MasterDoor
     {
-        public override EDoorType GetDoorType()
+        public EDoorType GetDoorType()
         {
             return EDoorType.FrontDoor;
         }
-        public override EDoorMaterial GetDoorMaterial()
+
+        public FrontDoor()
         {
-            return EDoorMaterial.Wooden;
-        }
-        public override EColor GetColor()
-        {
-            return EColor.ColorBlack;
+
         }
     }
 }

@@ -9,27 +9,27 @@ namespace BoGodtLibrary
     public interface IMasterWindow
     {
         EWindowType GetWindowType();
-        EWindowMaterial Setwindowmaterial
+        EWindowMaterial windowMaterial
         {
             get;
             set;
         }
-        EWindowCasement Setwindowcasement
+        EWindowCasement windowCasement
         {
             get;
             set;
         }
-        EColor Setcolor
+        EColor color
         {
             get;
             set;
         }
-        bool Setwindowopen
+        bool windowOpen
         {
             get;
             set;
         }
-        bool Setwindowfrosted
+        bool windowFrosted
         {
             get;
             set;

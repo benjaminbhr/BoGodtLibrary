@@ -8,7 +8,7 @@ namespace BoGodtLibrary
 {
     public interface IMediumWindow
     {
-        EWindowCasement Setwindowcasement
+        EWindowCasement windowCasement
         {
             get;
             set;

@@ -13,6 +13,9 @@ namespace BoGodtLibrary
         {
             return EWindowType.Medium;
         }
-
+        public MediumWindow()
+        {
+            windowCasement = EWindowCasement.CasementTwo;
+        }
     }
 }
