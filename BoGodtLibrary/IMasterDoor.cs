@@ -11,6 +11,15 @@ namespace BoGodtLibrary
         EDoorType GetDoorType();
         EDoorMaterial GetDoorMaterial();
         EColor GetColor();
-        bool IsLockable();
+        bool SetDoorLockable
+        {
+            get;
+            set;
+        }
+        bool SetDoorOpen
+        {
+            get;
+            set;
+        }
     }
 }
