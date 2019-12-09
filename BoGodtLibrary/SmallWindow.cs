@@ -15,7 +15,7 @@ namespace BoGodtLibrary
         }
         public SmallWindow()
         {
-            Setwindowcasement = EWindowCasement.Casementone;
+            Setwindowcasement = EWindowCasement.CasementOne;
             Setwindowmaterial = EWindowMaterial.WoodOak;
             Setcolor = EColor.ColorWhite;
         }
