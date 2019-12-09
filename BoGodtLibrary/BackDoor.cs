@@ -20,10 +20,5 @@ namespace BoGodtLibrary
         {
             return EColor.ColorRed;
         }
-
-        public override bool IsLockable()
-        {
-            return false;
-        }
     }
 }

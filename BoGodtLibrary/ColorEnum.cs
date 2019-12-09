@@ -12,5 +12,6 @@ namespace BoGodtLibrary
         ColorBlack = 2,
         ColorYellow = 3,
         ColorWhite = 4,
+
     }
 }
