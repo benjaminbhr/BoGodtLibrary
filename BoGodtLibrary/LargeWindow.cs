@@ -11,8 +11,11 @@ namespace BoGodtLibrary
 
         public override EWindowType GetWindowType()
         {
-            throw new NotImplementedException();
+            return EWindowType.Large;
         }
-
+        public LargeWindow()
+        {
+            windowCasement = EWindowCasement.CasementThree;
+        }
     }
 }
