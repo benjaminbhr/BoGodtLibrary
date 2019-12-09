@@ -8,15 +8,6 @@ namespace BoGodtLibrary
 {
     public class MediumWindow : MasterWindow
     {
-        public override EColor GetColor()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override EWindowMaterial GetWindowMaterial()
-        {
-            throw new NotImplementedException();
-        }
 
         public override EWindowType GetWindowType()
         {

@@ -9,20 +9,15 @@ namespace BoGodtLibrary
     public class SmallWindow : MasterWindow
     {
 
-
-        public override EColor GetColor()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override EWindowMaterial GetWindowMaterial()
-        {
-            throw new NotImplementedException();
-        }
-
         public override EWindowType GetWindowType()
         {
             return EWindowType.Small;
+        }
+        public SmallWindow()
+        {
+            Setwindowcasement = EWindowCasement.Casementone;
+            Setwindowmaterial = EWindowMaterial.WoodOak;
+            Setcolor = EColor.ColorWhite;
         }
     }
 }
