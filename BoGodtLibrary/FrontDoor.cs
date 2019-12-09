@@ -16,10 +16,6 @@ namespace BoGodtLibrary
         {
             return EDoorMaterial.Wooden;
         }
-        public override bool CanDoorOpen()
-        {
-            return true;
-        }
         public override EColor GetColor()
         {
             return EColor.ColorBlack;

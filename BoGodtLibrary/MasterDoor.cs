@@ -10,8 +10,20 @@ namespace BoGodtLibrary
     {
         public abstract EDoorMaterial GetDoorMaterial();
         public abstract EColor GetColor();
-        public abstract bool CanDoorOpen();
+
+        private bool _SetDoorOpen;
+        public bool SetDoorOpen
+        {
+            get => _SetDoorOpen;
+            set => _SetDoorOpen = value;
+        }
         public abstract EDoorType GetDoorType();
-        public abstract bool IsLockable();
+
+        private bool _SetDoorLockable;
+        public bool SetDoorLockable
+        {
+            get => _SetDoorLockable;
+            set => _SetDoorLockable = value;
+        }
     }
 }
