@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public class MediumWindow : MasterWindow
+    public interface IMediumWindow
     {
-
-        public override EWindowType GetWindowType()
+        EWindowCasement Setwindowcasement
         {
-            return EWindowType.Medium;
+            get;
+            set;
         }
-
     }
 }

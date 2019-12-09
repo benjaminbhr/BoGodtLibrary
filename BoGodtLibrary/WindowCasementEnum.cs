@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public class MediumWindow : MasterWindow
+    public enum EWindowCasement
     {
-
-        public override EWindowType GetWindowType()
-        {
-            return EWindowType.Medium;
-        }
-
+        Casementone = 1,
+        Casementtwo = 2,
+        Casementthree = 3,
     }
 }
