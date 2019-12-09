@@ -20,12 +20,11 @@ namespace BoGodtLibrary
         public Bathroom()
         {
             IMasterWindow bathroomwindow = new SmallWindow();
+            bathroomwindow.Setwindowfrosted = true;
+            bathroomwindow.Setwindowopen = false;
             windows.Add(bathroomwindow);
+
         }
-
-
-        
-
         int MaxWindows = 0;
     }
 }
