@@ -10,7 +10,7 @@ namespace BoGodtLibrary
     {
         WoodBirch,
         WoodOak,
-        Woodmahogany,
+        WoodMahogany,
         Plastic,
         Aluminium,
     }

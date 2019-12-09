@@ -8,8 +8,8 @@ namespace BoGodtLibrary
 {
     public enum EWindowCasement
     {
-        Casementone = 1,
-        Casementtwo = 2,
-        Casementthree = 3,
+        CasementOne = 1,
+        CasementTwo = 2,
+        CasementThree = 3,
     }
 }
