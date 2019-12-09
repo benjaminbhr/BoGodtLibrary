@@ -9,6 +9,8 @@ namespace BoGodtLibrary
     public abstract class MasterRoom : IMasterRoom
     {
         public abstract ERoomType GetRoomType();
+
+
         public List<IMasterWindow> windows = new List<IMasterWindow>();
         public List<IMasterWindow> GetWindows()
         {

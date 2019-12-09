@@ -8,10 +8,10 @@ namespace BoGodtLibrary
 {
     public enum ERoomType
     {
-        Kitchen = 1,
-        LivingRoom = 2,
-        Bathroom = 3,
-        Room = 4,
-        Entrance = 5,
+        Room = 0,
+        LivingRoom = 1,
+        Bathroom = 2,
+        Kitchen = 3,
+        Entrance = 4,
     }
 }
