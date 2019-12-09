@@ -9,5 +9,6 @@ namespace BoGodtLibrary
     interface IEntrance
     {
         void MyMethod(ERoomType Entrance);
+
     }
 }
