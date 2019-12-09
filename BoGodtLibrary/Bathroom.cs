@@ -16,20 +16,18 @@ namespace BoGodtLibrary
         {
             return true;
         }
-        public void AddWindows()
+
+        public Bathroom()
         {
-            if (MaxWindows >= 1)
-            {
-                throw new Exception("Too many windows :(");
-            }
-            else
-            {
-                MasterWindow vindue = new MediumWindow();
-                vindue.CanWindowOpen(true);
-                windows.Add(vindue);
-                MaxWindows++;
-            }
+            IMasterWindow bathroomwindow = new SmallWindow();
+            bathroomwindow.Setwindowfrosted = true;
+            bathroomwindow.Setwindowcasement = EWindowCasement.Casementone;
+            bathroomwindow.Setwindowopen = false;
+            windows.Add(bathroomwindow);
         }
+
+
+        
 
         int MaxWindows = 0;
     }

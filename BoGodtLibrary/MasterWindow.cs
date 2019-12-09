@@ -8,10 +8,35 @@ namespace BoGodtLibrary
 {
     public abstract class MasterWindow : IMasterWindow
     {
-        public abstract void CanWindowOpen(bool canwindowopen);
-        public abstract bool IsWindowFrosted();
-        public abstract EWindowMaterial GetWindowMaterial();
-        public abstract EColor GetColor();
+        private bool _Setwindowopen;
+        public bool Setwindowopen
+        {
+            get => _Setwindowopen;
+            set => _Setwindowopen = value;
+        }
+
+        private bool _Setwindowfrosted;
+        public bool Setwindowfrosted
+        {
+            set
+            {
+                _Setwindowfrosted = value;
+            }
+
+            get => _Setwindowfrosted;
+        }
+        public EWindowMaterial Setwindowmaterial
+        {
+            get => Setwindowmaterial;
+            set => Setwindowmaterial = value;
+        }
+        public EColor Setcolor
+        {
+            get => Setcolor;
+            set => Setcolor = value;
+        }
+
+        public EWindowCasement Setwindowcasement { get; set; }
         public abstract EWindowType GetWindowType();
         
     }
