@@ -8,40 +8,41 @@ namespace BoGodtLibrary
 {
     public abstract class MasterWindow : IMasterWindow
     {
-        private bool _Setwindowopen = true;
-        public bool Setwindowopen
+        private bool _windowOpen = true;
+        public bool windowOpen
         {
-            get => _Setwindowopen;
-            set => _Setwindowopen = value;
+            get => _windowOpen;
+            set => _windowOpen = value;
         }
 
-        private bool _Setwindowfrosted = false;
-        public bool Setwindowfrosted
+        private bool _windowFrosted = false;
+        public bool windowFrosted
         {
-            set
-            {
-                _Setwindowfrosted = value;
-            }
+            get => _windowFrosted;
+            set => _windowFrosted = value;
 
-            get => _Setwindowfrosted;
         }
 
 
-        private EWindowMaterial _Setwindowmaterial = EWindowMaterial.WoodOak;
-        public EWindowMaterial Setwindowmaterial
+        private EWindowMaterial _windowMaterial = EWindowMaterial.WoodOak;
+        public EWindowMaterial windowMaterial
         {
-            get => _Setwindowmaterial;
-            set => _Setwindowmaterial = value;
+            get => _windowMaterial;
+            set => _windowMaterial = value;
         }
 
-        private EColor _Setcolor = EColor.ColorWhite;
-        public EColor Setcolor
+        private EColor _color = EColor.ColorWhite;
+        public EColor color
         {
-            get => _Setcolor;
-            set => _Setcolor = value;
+            get => _color;
+            set => _color = value;
         }
 
-        public EWindowCasement Setwindowcasement { get; set; }
+        public EWindowCasement windowCasement
+        {
+            get;
+            set;
+        }
         public abstract EWindowType GetWindowType();
         
     }

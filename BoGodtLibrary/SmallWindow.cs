@@ -15,6 +15,8 @@ namespace BoGodtLibrary
         }
         public SmallWindow()
         {
+            windowCasement = EWindowCasement.CasementOne;
         }
+
     }
 }
