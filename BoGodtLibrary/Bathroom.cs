@@ -21,7 +21,7 @@ namespace BoGodtLibrary
         {
             IMasterWindow bathroomwindow = new SmallWindow();
             bathroomwindow.Setwindowfrosted = true;
-            bathroomwindow.Setwindowcasement = EWindowCasement.Casementone;
+            bathroomwindow.Setwindowcasement = EWindowCasement.CasementOne;
             bathroomwindow.Setwindowopen = false;
             windows.Add(bathroomwindow);
         }
