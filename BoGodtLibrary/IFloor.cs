@@ -13,6 +13,10 @@ namespace BoGodtLibrary
             get;
             set;
         }
-        EColor GetColor();
+        EColor color
+        {
+            get;
+            set;
+        }
     }
 }
