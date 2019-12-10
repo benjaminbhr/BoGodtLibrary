@@ -8,6 +8,14 @@ namespace BoGodtLibrary
 {
     public enum EFloorType
     {
-
+        Click,
+        Parquet,
+        Tile,
+        Terrazzo,
+        Mosaic,
+        PVC,
+        Laminate,
+        Carpet,
+        Linoleum
     }
 }

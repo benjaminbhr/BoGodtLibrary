@@ -8,7 +8,11 @@ namespace BoGodtLibrary
 {
     public interface IFloor
     {
-        EFloorType GetFloorType();
+        EFloorType floorType
+        {
+            get;
+            set;
+        }
         EColor GetColor();
     }
 }

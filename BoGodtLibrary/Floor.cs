@@ -8,13 +8,14 @@ namespace BoGodtLibrary
 {
     public class Floor : IFloor
     {
-        public EColor GetColor()
+        private EFloorType _floorType = EFloorType.Click;
+        public EFloorType floorType
         {
-            throw new NotImplementedException();
+            get => _floorType;
+            set => _floorType = value;
         }
 
-
-        public EFloorType GetFloorType()
+        public EColor GetColor()
         {
             throw new NotImplementedException();
         }
