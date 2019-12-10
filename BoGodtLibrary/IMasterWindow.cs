@@ -9,6 +9,7 @@ namespace BoGodtLibrary
     public interface IMasterWindow
     {
         EWindowType GetWindowType();
+        EWindowCasement GetWindowCasement();
         EWindowMaterial windowMaterial
         {
             get;
