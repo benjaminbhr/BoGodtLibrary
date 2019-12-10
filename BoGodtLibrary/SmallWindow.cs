@@ -13,9 +13,10 @@ namespace BoGodtLibrary
         {
             return EWindowType.Small;
         }
-        public SmallWindow()
+        
+        public override EWindowCasement GetWindowCasement()
         {
-            windowCasement = EWindowCasement.CasementOne;
+            return EWindowCasement.CasementOne;
         }
 
     }
