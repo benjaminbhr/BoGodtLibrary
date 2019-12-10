@@ -20,9 +20,11 @@ namespace BoGodtLibrary
         public Bathroom()
         {
             IMasterWindow bathroomwindow = new SmallWindow();
+            IMasterDoor bathroomdoor = new RoomDoor();
             bathroomwindow.windowFrosted = false;
             bathroomwindow.windowOpen = false;
             windows.Add(bathroomwindow);
+            doors.Add(bathroomdoor);
         }
 
         
