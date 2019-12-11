@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BackDoor.cs" />
     <Compile Include="Bathroom.cs" />
+    <Compile Include="BoGodtExceptions\DoorException.cs" />
     <Compile Include="ColorEnum.cs" />
     <Compile Include="DoorMaterialEnum.cs" />
     <Compile Include="DoorTypeEnum.cs" />
@@ -74,8 +75,6 @@
     <Compile Include="WindowMaterialEnum.cs" />
     <Compile Include="WindowTypeEnum.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BoGodtExceptions\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
