@@ -18,3 +18,4 @@ namespace BoGodtLibrary
             return EWindowCasement.CasementThree;
         }
     }
+}
