@@ -8,6 +8,7 @@ namespace BoGodtLibrary
 {
     public class Bathroom : MasterRoom
     {
+        public IMasterWindow smallwindow = new SmallWindow();
         public override ERoomType GetRoomType()
         {
             return ERoomType.Bathroom;
@@ -23,6 +24,28 @@ namespace BoGodtLibrary
             doors.Add(bathroomdoor);
         }
 
-        
+
+        public void AddWindows(EWindowType windowType)
+        {
+            switch (windowType)
+            {
+                case EWindowType.Small:
+                    IMasterWindow smallwindow = new SmallWindow();
+                    windows.Add(smallwindow);
+                    break;
+                case EWindowType.Medium:
+                    IMasterWindow mediumwindow = new MediumWindow();
+                    windows.Add(mediumwindow);
+                    break;
+                case EWindowType.Large:
+                    IMasterWindow largewindow = new LargeWindow();
+                    windows.Add(largewindow);
+                    break;
+                case EWindowType.Nowindow:
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
