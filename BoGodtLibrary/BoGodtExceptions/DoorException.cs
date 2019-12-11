@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary.BoGodtExceptions
 {
-    public class DoorException:Exception
+    public class OnlyOneDoorException:Exception
     {
+        public OnlyOneDoorException()
+            : base()
+        {
 
+        }
+
+        public OnlyOneDoorException(string message)
+            : base()
+        {
+            
+        }
     }
 }
