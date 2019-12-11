@@ -74,5 +74,8 @@
     <Compile Include="WindowMaterialEnum.cs" />
     <Compile Include="WindowTypeEnum.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BoGodtExceptions\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

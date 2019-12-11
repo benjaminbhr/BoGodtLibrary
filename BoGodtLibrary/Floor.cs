@@ -8,6 +8,9 @@ namespace BoGodtLibrary
 {
     public class Floor : MasterFloor
     {
-
+        public EFloorType GetFloorType()
+        {
+            return EFloorType.Click;
+        }
     }
 }

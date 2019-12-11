@@ -10,7 +10,7 @@ namespace BoGodtLibrary
     {
         public override ERoomType GetRoomType()
         {
-            throw new NotImplementedException();
+            return ERoomType.Entrance;
         }
 
         public Entrance()
@@ -21,6 +21,7 @@ namespace BoGodtLibrary
             doors.Add(entrancedoor);
 
             IMasterFloor floor = new Floor();
+            floors.Add(floor);
             
         }
 
