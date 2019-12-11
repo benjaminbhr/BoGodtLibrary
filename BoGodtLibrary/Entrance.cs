@@ -19,6 +19,9 @@ namespace BoGodtLibrary
             entrancedoor.SetDoorLockable = true;
             entrancedoor.SetDoorOpen = true;
             doors.Add(entrancedoor);
+
+            IMasterFloor floor = new Floor();
+            
         }
 
         //Do we need this? And the interface at all?

@@ -6,18 +6,8 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public class Floor : IFloor
+    public class Floor : MasterFloor
     {
-        private EFloorType _floorType = EFloorType.Click;
-        public EFloorType floorType
-        {
-            get => _floorType;
-            set => _floorType = value;
-        }
 
-        public EColor GetColor()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

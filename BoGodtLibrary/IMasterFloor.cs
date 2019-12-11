@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    public interface IFloor
+    public interface IMasterFloor
     {
-        EFloorType floorType
+        EFloorType SetFloorType
         {
             get;
             set;
         }
-        EColor GetColor();
+        EColor SetFloorColor
+        {
+            get;
+            set;
+        }
     }
 }

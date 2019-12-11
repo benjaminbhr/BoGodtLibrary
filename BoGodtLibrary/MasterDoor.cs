@@ -36,7 +36,7 @@ namespace BoGodtLibrary
             set => DoorOpen = value;
         }
 
-        private bool DoorLockable = true;
+        private bool DoorLockable = false;
         public bool SetDoorLockable
         {
             get => DoorLockable;
