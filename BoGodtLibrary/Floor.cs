@@ -15,9 +15,11 @@ namespace BoGodtLibrary
             set => _floorType = value;
         }
 
-        public EColor GetColor()
+        private EColor _color = EColor.ColorWhite;
+        public EColor color
         {
-            throw new NotImplementedException();
+            get => _color;
+            set => _color = value;
         }
     }
 }
