@@ -12,5 +12,28 @@ namespace BoGodtLibrary
         {
             return ERoomType.Room;
         }
+        
+        public Room()
+        {
+        int presentWindows = 0;
+        int maxWindows = 5;
+        int minWindows = 1;
+
+            if (presentWindows < minWindows)
+            {
+                IMasterWindow roomwindow = new SmallWindow();
+                presentWindows++;
+                Console.WriteLine("New window added since none were present!");
+            }
+            
+            else if (presentWindows > maxWindows)
+            {
+                throw new System.InvalidOperationException("You can't add more than five windows to a room!");
+            }
+
+        }
+
+
+        
     }
 }

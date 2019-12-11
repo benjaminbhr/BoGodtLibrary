@@ -22,7 +22,6 @@ namespace BoGodtLibrary
         {
             get => _windowFrosted;
             set => _windowFrosted = value;
-
         }
 
 

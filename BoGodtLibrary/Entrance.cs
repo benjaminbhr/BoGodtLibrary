@@ -10,7 +10,7 @@ namespace BoGodtLibrary
     {
         public override ERoomType GetRoomType()
         {
-            throw new NotImplementedException();
+            return ERoomType.Entrance;
         }
 
         public Entrance()
@@ -19,6 +19,10 @@ namespace BoGodtLibrary
             entrancedoor.SetDoorLockable = true;
             entrancedoor.SetDoorOpen = true;
             doors.Add(entrancedoor);
+
+            IMasterFloor floor = new Floor();
+            floors.Add(floor);
+            
         }
 
         //Do we need this? And the interface at all?
