@@ -50,13 +50,14 @@
     <Compile Include="Floor.cs" />
     <Compile Include="FloorTypeEnum.cs" />
     <Compile Include="IEntrance.cs" />
-    <Compile Include="IFloor.cs" />
+    <Compile Include="IMasterFloor.cs" />
     <Compile Include="IKitchen.cs" />
     <Compile Include="IMasterDoor.cs" />
     <Compile Include="IMasterRoom.cs" />
     <Compile Include="IMasterWindow.cs" />
     <Compile Include="IMediumWindow.cs" />
     <Compile Include="LivingRoom.cs" />
+    <Compile Include="MasterFloor.cs" />
     <Compile Include="Room.cs" />
     <Compile Include="RoomDoor.cs" />
     <Compile Include="RoomTypeEnum.cs" />

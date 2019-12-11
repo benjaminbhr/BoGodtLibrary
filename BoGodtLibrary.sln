@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoGodtLibrary", "BoGodtLibr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoGodtTests", "BoGodtTests\BoGodtTests.csproj", "{5E7E5A44-87F6-41DC-9126-3532AEEFB71A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoGodtLibraryUnitTest", "BoGodtLibraryUnitTest\BoGodtLibraryUnitTest.csproj", "{7514437E-AE55-490F-85E4-DBC833F328F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5E7E5A44-87F6-41DC-9126-3532AEEFB71A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E7E5A44-87F6-41DC-9126-3532AEEFB71A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E7E5A44-87F6-41DC-9126-3532AEEFB71A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7514437E-AE55-490F-85E4-DBC833F328F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7514437E-AE55-490F-85E4-DBC833F328F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7514437E-AE55-490F-85E4-DBC833F328F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7514437E-AE55-490F-85E4-DBC833F328F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

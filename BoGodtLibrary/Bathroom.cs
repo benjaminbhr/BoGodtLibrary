@@ -12,10 +12,6 @@ namespace BoGodtLibrary
         {
             return ERoomType.Bathroom;
         }
-        public bool IsNew()
-        {
-            return true;
-        }
 
         public Bathroom()
         {
