@@ -19,11 +19,14 @@ namespace BoGodtLibrary
         int maxWindows = 5;
         int minWindows = 1;
 
-            if (presentWindows < minWindows)
+            if (presentWindows <= minWindows)
             {
                 IMasterWindow roomwindow = new SmallWindow();
+                roomwindow.windowFrosted = false;
+                roomwindow.windowOpen = true;
+                windows.Add(roomwindow);
                 presentWindows++;
-                Console.WriteLine("New window added since none were present!");
+                Console.WriteLine("New window were added to room since none were present!");
             }
             
             else if (presentWindows > maxWindows)
@@ -32,8 +35,5 @@ namespace BoGodtLibrary
             }
 
         }
-
-
-        
     }
 }

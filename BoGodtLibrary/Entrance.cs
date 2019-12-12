@@ -30,5 +30,26 @@ namespace BoGodtLibrary
         {
             throw new NotImplementedException();
         }
+
+        public void AddDoors(EDoorType doorType)
+        {
+            switch (doorType)
+            {
+                case EDoorType.FrontDoor:
+                    IMasterDoor frontdoor = new FrontDoor();
+                    doors.Add(frontdoor);
+                    break;
+                case EDoorType.BackDoor:
+                    IMasterDoor backdoor = new BackDoor();
+                    doors.Add(backdoor);
+                    break;
+                case EDoorType.RoomDoor:
+                    IMasterDoor roomdoor = new RoomDoor();
+                    doors.Add(roomdoor);
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
