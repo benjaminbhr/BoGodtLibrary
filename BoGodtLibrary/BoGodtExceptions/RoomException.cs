@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary.BoGodtExceptions
 {
-    class RoomException
+    class RoomException : Exception
     {
+        
     }
 }
