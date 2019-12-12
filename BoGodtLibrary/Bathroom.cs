@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BoGodtLibrary.BoGodtExceptions;
 
 namespace BoGodtLibrary
 {
@@ -24,22 +25,44 @@ namespace BoGodtLibrary
             doors.Add(bathroomdoor);
         }
 
-
+        public int maxwindows = 1;
         public void AddWindows(EWindowType windowType)
         {
+
             switch (windowType)
             {
                 case EWindowType.Small:
-                    IMasterWindow smallwindow = new SmallWindow();
-                    windows.Add(smallwindow);
+                    if (windows.Count() == 1)
+                    {
+                        throw new OnlyOneWindowException(string.Format("This room can only contain 1 window"));
+                    }
+                    else
+                    {
+                        IMasterWindow smallwindow = new SmallWindow();
+                        windows.Add(smallwindow);
+                    }
                     break;
                 case EWindowType.Medium:
-                    IMasterWindow mediumwindow = new MediumWindow();
-                    windows.Add(mediumwindow);
+                    if (windows.Count() == 1)
+                    {
+                        throw new OnlyOneWindowException(string.Format("This room can only contain 1 window"));
+                    }
+                    else
+                    {
+                        IMasterWindow mediumwindow = new MediumWindow();
+                        windows.Add(mediumwindow);
+                    }
                     break;
                 case EWindowType.Large:
-                    IMasterWindow largewindow = new LargeWindow();
-                    windows.Add(largewindow);
+                    if (windows.Count() == 1)
+                    {
+                        throw new OnlyOneWindowException(string.Format("This room can only contain 1 window"));
+                    }
+                    else
+                    {
+                        IMasterWindow largewindow = new LargeWindow();
+                        windows.Add(largewindow);
+                    }
                     break;
                 case EWindowType.Nowindow:
                     break;
