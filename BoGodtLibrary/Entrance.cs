@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
-    class Entrance:MasterRoom
+    public class Entrance:MasterRoom
     {
         public override ERoomType GetRoomType()
         {
@@ -29,27 +29,6 @@ namespace BoGodtLibrary
         public void MyMethod(ERoomType Entrance)
         {
             throw new NotImplementedException();
-        }
-
-        public void AddDoors(EDoorType doorType)
-        {
-            switch (doorType)
-            {
-                case EDoorType.FrontDoor:
-                    IMasterDoor frontdoor = new FrontDoor();
-                    doors.Add(frontdoor);
-                    break;
-                case EDoorType.BackDoor:
-                    IMasterDoor backdoor = new BackDoor();
-                    doors.Add(backdoor);
-                    break;
-                case EDoorType.RoomDoor:
-                    IMasterDoor roomdoor = new RoomDoor();
-                    doors.Add(roomdoor);
-                    break;
-                default:
-                    break;
-            }
         }
     }
 }
