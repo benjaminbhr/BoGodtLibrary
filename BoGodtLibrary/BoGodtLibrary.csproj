@@ -45,6 +45,7 @@
     <Compile Include="Bathroom.cs" />
     <Compile Include="BoGodtExceptions\BathroomException.cs" />
     <Compile Include="BoGodtExceptions\DoorException.cs" />
+    <Compile Include="BoGodtExceptions\OnlyOneFloorException.cs" />
     <Compile Include="BoGodtExceptions\OnlyOneWindowException.cs" />
     <Compile Include="ColorEnum.cs" />
     <Compile Include="DoorMaterialEnum.cs" />
