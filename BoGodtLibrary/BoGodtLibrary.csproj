@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="BackDoor.cs" />
     <Compile Include="Bathroom.cs" />
-    <Compile Include="BoGodtExceptions\DoorException.cs" />
+    <Compile Include="BoGodtExceptions\OnlyOneDoorException.cs" />
     <Compile Include="BoGodtExceptions\RoomException.cs" />
     <Compile Include="ColorEnum.cs" />
     <Compile Include="DoorMaterialEnum.cs" />

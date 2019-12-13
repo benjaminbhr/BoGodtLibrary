@@ -1,8 +1,5 @@
-﻿using System;
+﻿using BoGodtLibrary.BoGodtExceptions;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
@@ -15,7 +12,7 @@ namespace BoGodtLibrary
             set => _SetDoorMaterial = value;
         }
 
-        private EColor doorColor = EColor.ColorWhite; 
+        private EColor doorColor = EColor.ColorWhite;
         public EColor SetDoorColor
         {
             get => doorColor;
@@ -23,11 +20,7 @@ namespace BoGodtLibrary
         }
 
         private EDoorType DoorType = EDoorType.RoomDoor;
-        public EDoorType SetDoorType
-        {
-            get => DoorType;
-            set => DoorType = value;
-        }
+        public abstract EDoorType GetDoorType();
 
         private bool DoorOpen = true;
         public bool SetDoorOpen
@@ -41,6 +34,26 @@ namespace BoGodtLibrary
         {
             get => DoorLockable;
             set => DoorLockable = value;
+        }
+
+        List<IMasterDoor> doors = new List<IMasterDoor>();
+        public void AddDoors(EDoorType doorType)
+        {
+            switch (doorType)
+            {
+                case EDoorType.FrontDoor:
+                    IMasterDoor frontdoor = new FrontDoor();
+                    doors.Add(frontdoor);
+                    break;
+                case EDoorType.BackDoor:
+                    IMasterDoor backdoor = new BackDoor();
+                    doors.Add(backdoor);
+                    break;
+                case EDoorType.RoomDoor:
+                    throw new OnlyOneDoorException();
+                default:
+                    break;
+            }
         }
     }
 }
