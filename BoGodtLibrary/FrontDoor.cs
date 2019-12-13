@@ -8,7 +8,7 @@ namespace BoGodtLibrary
 {
     public class FrontDoor:MasterDoor
     {
-        public EDoorType GetDoorType()
+        public override EDoorType GetDoorType()
         {
             return EDoorType.FrontDoor;
         }
