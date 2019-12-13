@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary.BoGodtExceptions
 {
-    class OnlyOneFloorException
+    class OnlyOneFloorException:Exception
     {
+        public OnlyOneFloorException()
+        {
+
+        }
     }
 }
