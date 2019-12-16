@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BoGodtLibrary.BoGodtExceptions;
 
 namespace BoGodtLibrary
 {
-    public class Entrance:MasterRoom
+    public class Entrance : MasterRoom
     {
         public override ERoomType GetRoomType()
         {
@@ -22,7 +23,19 @@ namespace BoGodtLibrary
 
             IMasterFloor floor = new Floor();
             floors.Add(floor);
-            
+
+        }
+
+        public void AddDoors()
+        {
+            if (doors.Count > 1)
+            {
+                throw new OnlyOneDoorException();
+            }
+            else
+            {
+                doors.Add(new FrontDoor());
+            }
         }
 
         //Do we need this? And the interface at all?

@@ -19,7 +19,6 @@ namespace BoGodtLibrary
             set => doorColor = value;
         }
 
-        private EDoorType DoorType = EDoorType.RoomDoor;
         public abstract EDoorType GetDoorType();
 
         private bool DoorOpen = true;
