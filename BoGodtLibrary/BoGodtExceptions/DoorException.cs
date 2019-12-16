@@ -14,5 +14,11 @@ namespace BoGodtLibrary.BoGodtExceptions
         {
 
         }
+
+        public DoorException(string doorMessage)
+            :base(string.Format("There can only be one door", doorMessage))
+        {
+
+        }
     }
 }
