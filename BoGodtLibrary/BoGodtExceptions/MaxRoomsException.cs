@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary.BoGodtExceptions
 {
-    class RoomException : Exception
+    public class MaxRoomsException : Exception
     {
         
     }
