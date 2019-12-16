@@ -8,16 +8,17 @@ namespace BoGodtLibrary.BoGodtExceptions
 {
     public class OnlyOneDoorException:Exception
     {
+
         public OnlyOneDoorException()
             :base()
         {
 
         }
-        public OnlyOneDoorException(string message)
-            :base(string.Format("There can only be one door", message))
+
+        public OnlyOneDoorException(string doorMessage)
+            :base(string.Format("There can only be one door", doorMessage))
         {
 
         }
-
     }
 }

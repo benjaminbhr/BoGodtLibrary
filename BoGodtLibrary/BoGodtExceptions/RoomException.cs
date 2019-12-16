@@ -8,6 +8,10 @@ namespace BoGodtLibrary.BoGodtExceptions
 {
     class RoomException : Exception
     {
-        
+        public RoomException()
+            :base()
+        {
+
+        }
     }
 }

@@ -50,7 +50,9 @@ namespace BoGodtLibrary
                     doors.Add(backdoor);
                     break;
                 case EDoorType.RoomDoor:
-                    throw new OnlyOneDoorException();
+                    IMasterDoor roomdoor = new RoomDoor();
+                    doors.Add(roomdoor);
+                        break;
                 default:
                     break;
             }
