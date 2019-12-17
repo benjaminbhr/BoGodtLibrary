@@ -8,7 +8,7 @@ namespace BoGodtLibrary.BoGodtExceptions
 {
     public class MaxRoomsException : Exception
     {
-        public RoomException()
+        public MaxRoomsException()
             :base()
         {
 

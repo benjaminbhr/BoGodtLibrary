@@ -8,15 +8,10 @@ namespace BoGodtLibrary.BoGodtExceptions
 {
     public class OnlyOneFrontDoorException:Exception
     {
+        private const string ONLYONEFRONTDOOR = "There can only be one frontdoor";
 
         public OnlyOneFrontDoorException()
-            :base()
-        {
-
-        }
-
-        public OnlyOneFrontDoorException(string frontDoorMessage)
-            :base(string.Format("There can only be one frontdoor", frontDoorMessage))
+            :base(ONLYONEFRONTDOOR)
         {
 
         }

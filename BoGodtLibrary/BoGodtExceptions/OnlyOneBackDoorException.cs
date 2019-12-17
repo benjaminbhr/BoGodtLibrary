@@ -8,12 +8,6 @@ namespace BoGodtLibrary.BoGodtExceptions
 {
    public class OnlyOneBackDoorException:Exception
     {
-        public OnlyOneBackDoorException()
-            :base()
-        {
-
-        }
-
         public OnlyOneBackDoorException(string backDoorMessage)
             :base(backDoorMessage)
         {
