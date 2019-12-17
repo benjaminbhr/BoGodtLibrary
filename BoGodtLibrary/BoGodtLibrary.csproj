@@ -45,9 +45,11 @@
     <Compile Include="Bathroom.cs" />
     <Compile Include="BoGodtExceptions\BathroomException.cs" />
     <Compile Include="BoGodtExceptions\MaxRoomsException.cs" />
+    <Compile Include="BoGodtExceptions\OnlyOneBackDoorException.cs" />
     <Compile Include="BoGodtExceptions\OnlyOneFloorException.cs" />
     <Compile Include="BoGodtExceptions\OnlyOneWindowException.cs" />
-    <Compile Include="BoGodtExceptions\OnlyOneDoorException.cs" />
+    <Compile Include="BoGodtExceptions\OnlyOneFrontDoorException.cs" />
+    <Compile Include="BoGodtExceptions\RoomDoorException.cs" />
     <Compile Include="ColorEnum.cs" />
     <Compile Include="DoorMaterialEnum.cs" />
     <Compile Include="DoorTypeEnum.cs" />

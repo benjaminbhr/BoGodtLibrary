@@ -6,17 +6,16 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary.BoGodtExceptions
 {
-    public class OnlyOneDoorException:Exception
+    class RoomDoorException:Exception
     {
-
-        public OnlyOneDoorException()
+        public RoomDoorException()
             :base()
         {
 
         }
-
-        public OnlyOneDoorException(string doorMessage)
-            :base(string.Format("There can only be one door", doorMessage))
+        
+        public RoomDoorException(string roomDoorMessage)
+            :base(roomDoorMessage)
         {
 
         }

@@ -26,11 +26,11 @@ namespace BoGodtLibrary
 
         }
 
-        public void AddDoors()
+        public void AddFrontDoors()
         {
             if (doors.Count > 1)
             {
-                throw new OnlyOneDoorException();
+                throw new OnlyOneFrontDoorException();
             }
             else
             {
