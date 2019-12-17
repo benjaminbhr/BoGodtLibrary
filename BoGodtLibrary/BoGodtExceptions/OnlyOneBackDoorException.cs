@@ -8,8 +8,10 @@ namespace BoGodtLibrary.BoGodtExceptions
 {
    public class OnlyOneBackDoorException:Exception
     {
-        public OnlyOneBackDoorException(string backDoorMessage)
-            :base(backDoorMessage)
+        private const string ONLYONEBACKDOOR = "There can only be one backdoor";
+
+        public OnlyOneBackDoorException()
+            :base(ONLYONEBACKDOOR)
         {
 
         }
