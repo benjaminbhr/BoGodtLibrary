@@ -1,8 +1,10 @@
-﻿using System;
+﻿using BoGodtLibrary.BoGodtExceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace BoGodtLibrary
 {
@@ -12,7 +14,7 @@ namespace BoGodtLibrary
         {
             return ERoomType.LivingRoom;
         }
-
+        
 
     }
 }
