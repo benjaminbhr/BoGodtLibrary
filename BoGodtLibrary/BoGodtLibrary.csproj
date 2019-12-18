@@ -41,8 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackDoor.cs" />
-    <Compile Include="Bathroom.cs" />
+
     <Compile Include="BoGodtExceptions\BathroomException.cs" />
     <Compile Include="BoGodtExceptions\MaximumRoomDoorsException.cs" />
     <Compile Include="BoGodtExceptions\MaxRoomsException.cs" />
@@ -54,6 +53,8 @@
     <Compile Include="BoGodtExceptions\RoomDoorException.cs" />
     <Compile Include="BoGodtExceptions\WindowsException.cs" />
     <Compile Include="BoGodtExceptions\MinimumRoomDoorsException.cs" />
+    <Compile Include="BackDoor.cs" />
+    <Compile Include="Bathroom.cs" />
     <Compile Include="ColorEnum.cs" />
     <Compile Include="DoorMaterialEnum.cs" />
     <Compile Include="DoorTypeEnum.cs" />
