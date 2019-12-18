@@ -46,7 +46,6 @@
     <Compile Include="BoGodtExceptions\MaxRoomsException.cs" />
     <Compile Include="BoGodtExceptions\OnlyFiveWindowsException.cs" />
     <Compile Include="BoGodtExceptions\OnlyOneBackDoorException.cs" />
-    <Compile Include="BoGodtExceptions\OnlyOneDoorException.cs" />
     <Compile Include="BoGodtExceptions\OnlyOneFloorException.cs" />
     <Compile Include="BoGodtExceptions\OnlyOneWindowException.cs" />
     <Compile Include="BoGodtExceptions\OnlyOneFrontDoorException.cs" />
