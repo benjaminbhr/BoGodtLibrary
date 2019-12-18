@@ -20,6 +20,7 @@ namespace BoGodtLibrary
 
         public Bathroom()
         {
+
         }
 
         public void AddWindow(IMasterWindow bathRoomWindow)
