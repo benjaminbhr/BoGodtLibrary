@@ -3,37 +3,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BoGodtLibrary.BoGodtExceptions;
 
 namespace BoGodtLibrary
 {
     public class Room : MasterRoom
     {
+        private const int MAX_WINDOWS = 5;
         public override ERoomType GetRoomType()
         {
             return ERoomType.Room;
         }
-        
-        public Room()
+
+        public Room() { }
+
+        public void addWindow(IMasterWindow roomwindow) 
         {
-        int presentWindows = 0;
-        int maxWindows = 5;
-        int minWindows = 1;
-
-            if (presentWindows <= minWindows)
-            {
-                IMasterWindow roomwindow = new SmallWindow();
-                roomwindow.windowFrosted = false;
-                roomwindow.windowOpen = true;
-                windows.Add(roomwindow);
-                presentWindows++;
-                Console.WriteLine("New window were added to room since none were present!");
-            }
             
-            else if (presentWindows > maxWindows)
+            if (windows.Count +1 > MAX_WINDOWS)
             {
-                throw new System.InvalidOperationException("You can't add more than five windows to a room!");
+                throw new BoGodtExceptions.OnlyFiveWindowsException();
             }
-
+            Console.WriteLine("windows.count: " + (windows.Count + 1));
+            roomwindow.windowFrosted = false;
+            roomwindow.windowOpen = true;
+            windows.Add(roomwindow);
+            Console.WriteLine("New window were added to the room!");
         }
     }
 }

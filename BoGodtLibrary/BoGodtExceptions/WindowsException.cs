@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary.BoGodtExceptions
 {
-    public class MaxRoomsException : Exception
+    public abstract class RoomWindowsException : Exception
     {
+        
 
+        protected RoomWindowsException(string msg)
+            : base(msg)
+        {
+
+        }
     }
 }
