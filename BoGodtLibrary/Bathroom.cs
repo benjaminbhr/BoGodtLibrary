@@ -15,60 +15,46 @@ namespace BoGodtLibrary
             return ERoomType.Bathroom;
         }
 
+
         public Bathroom()
         {
-            IMasterWindow bathroomwindow = new SmallWindow();
-            IMasterDoor bathroomdoor = new RoomDoor();
-            bathroomwindow.windowFrosted = false;
-            bathroomwindow.windowOpen = false;
-            windows.Add(bathroomwindow);
-            doors.Add(bathroomdoor);
-        }
+            int presentWindows = 0;
+            int maxWindows = 1;
+            int minWindows = 1;
 
-        public int maxwindows = 1;
-        public void AddWindows(EWindowType windowType)
-        {
-
-            switch (windowType)
+            if (presentWindows < minWindows)
             {
-                case EWindowType.Small:
-                    if (windows.Count() == 1)
-                    {
-                        throw new OnlyOneWindowException(string.Format("This room can only contain 1 window"));
-                    }
-                    else
-                    {
+                IMasterWindow bathRoomWindow = new SmallWindow();
+                bathRoomWindow.windowFrosted = false;
+                bathRoomWindow.windowOpen = true;
+                windows.Add(bathRoomWindow);
+                presentWindows++;
+                Console.WriteLine("New window were added to room since none were present!");
+            }
+
+            else if (presentWindows == maxWindows)
+            {
+                throw new System.InvalidOperationException("You can't add more than five windows to a room!");
+            }
+            void AddWindows(EWindowType windowType)
+            {
+                switch (windowType)
+                {
+                    case EWindowType.Small:
                         IMasterWindow smallwindow = new SmallWindow();
-                        windows.Add(smallwindow);
-                    }
-                    break;
-                case EWindowType.Medium:
-                    if (windows.Count() == 1)
-                    {
-                        throw new OnlyOneWindowException(string.Format("This room can only contain 1 window"));
-                    }
-                    else
-                    {
-                        IMasterWindow mediumwindow = new MediumWindow();
-                        windows.Add(mediumwindow);
-                    }
-                    break;
-                case EWindowType.Large:
-                    if (windows.Count() == 1)
-                    {
-                        throw new OnlyOneWindowException(string.Format("This room can only contain 1 window"));
-                    }
-                    else
-                    {
-                        IMasterWindow largewindow = new LargeWindow();
-                        windows.Add(largewindow);
-                    }
-                    break;
-                case EWindowType.Nowindow:
-                    break;
-                default:
-                    break;
+
+                        break;
+                    case EWindowType.Medium:
+                        break;
+                    case EWindowType.Large:
+                        break;
+                    case EWindowType.Nowindow:
+                        break;
+                    default:
+                        break;
+                }
             }
         }
+
     }
 }
