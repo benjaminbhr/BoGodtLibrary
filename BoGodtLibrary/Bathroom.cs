@@ -9,6 +9,8 @@ namespace BoGodtLibrary
 {
     public class Bathroom : MasterRoom
     {
+
+        private const int MAX_WINDOWS = 1;
         public IMasterWindow smallwindow = new SmallWindow();
         public override ERoomType GetRoomType()
         {
@@ -18,43 +20,20 @@ namespace BoGodtLibrary
 
         public Bathroom()
         {
-            int presentWindows = 0;
-            int maxWindows = 1;
-            int minWindows = 1;
-
-            if (presentWindows < minWindows)
-            {
-                IMasterWindow bathRoomWindow = new SmallWindow();
-                bathRoomWindow.windowFrosted = false;
-                bathRoomWindow.windowOpen = true;
-                windows.Add(bathRoomWindow);
-                presentWindows++;
-                Console.WriteLine("New window were added to room since none were present!");
-            }
-
-            else if (presentWindows == maxWindows)
-            {
-                throw new System.InvalidOperationException("You can't add more than five windows to a room!");
-            }
-            void AddWindows(EWindowType windowType)
-            {
-                switch (windowType)
-                {
-                    case EWindowType.Small:
-                        IMasterWindow smallwindow = new SmallWindow();
-
-                        break;
-                    case EWindowType.Medium:
-                        break;
-                    case EWindowType.Large:
-                        break;
-                    case EWindowType.Nowindow:
-                        break;
-                    default:
-                        break;
-                }
-            }
         }
 
+        public void AddWindow(IMasterWindow bathRoomWindow)
+        {
+
+            if (windows.Count + 1 > MAX_WINDOWS)
+            {
+                throw new BoGodtExceptions.OnlyOneWindowsException();
+            }
+            bathRoomWindow.windowFrosted = false;
+            bathRoomWindow.windowOpen = true;
+            windows.Add(bathRoomWindow);
+            Console.WriteLine("windows.count: " + (windows.Count));
+            Console.WriteLine("New window were added to the room!");
+        }
     }
 }

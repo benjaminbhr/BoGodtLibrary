@@ -7,13 +7,14 @@ using BoGodtLibrary;
 
 namespace BoGodtLibrary.BoGodtExceptions
 {
-    class OnlyOneWindowException : Exception
+    public class OnlyOneWindowsException : RoomWindowsException
     {
-        public OnlyOneWindowException(string message) 
-            :base(message)
+        private const string ONLYONEWINDOWS = "You can maximum add 1 window to this room";
+
+        public OnlyOneWindowsException()
+            : base(ONLYONEWINDOWS)
         {
 
         }
-        
     }
 }
