@@ -44,6 +44,7 @@
     <Compile Include="BoGodtExceptions\BathroomException.cs" />
     <Compile Include="BoGodtExceptions\MaximumRoomDoorsException.cs" />
     <Compile Include="BoGodtExceptions\MaxRoomsException.cs" />
+    <Compile Include="BoGodtExceptions\MinimumOneWindowException.cs" />
     <Compile Include="BoGodtExceptions\OnlyFiveWindowsException.cs" />
     <Compile Include="BoGodtExceptions\OnlyOneBackDoorException.cs" />
     <Compile Include="BoGodtExceptions\OnlyOneFloorException.cs" />
