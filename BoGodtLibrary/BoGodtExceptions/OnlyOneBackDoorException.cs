@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary.BoGodtExceptions
 {
-    public class OnlyOneDoorException
+   public class OnlyOneBackDoorException:Exception
     {
-        public OnlyOneDoorException()
-            : base()
+        public OnlyOneBackDoorException(string backDoorMessage)
+            :base(backDoorMessage)
         {
 
         }
-        
     }
 }

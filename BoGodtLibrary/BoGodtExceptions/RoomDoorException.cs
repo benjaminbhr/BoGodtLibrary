@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary.BoGodtExceptions
 {
-    public class OnlyOneDoorException
+    class RoomDoorException:Exception
     {
-        public OnlyOneDoorException()
-            : base()
+        public RoomDoorException()
+            :base()
         {
 
         }
         
+        public RoomDoorException(string roomDoorMessage)
+            :base(roomDoorMessage)
+        {
+
+        }
     }
 }
