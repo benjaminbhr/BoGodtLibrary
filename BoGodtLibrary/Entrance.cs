@@ -13,7 +13,7 @@ namespace BoGodtLibrary
         {
             return ERoomType.Entrance;
         }
-
+        
         public Entrance()
         {
             IMasterDoor entrancedoor = new FrontDoor();
@@ -23,6 +23,11 @@ namespace BoGodtLibrary
 
             IMasterFloor floor = new Floor();
             floors.Add(floor);
+
+        }
+        
+        public void AddRoomDoors()
+        {
 
         }
 

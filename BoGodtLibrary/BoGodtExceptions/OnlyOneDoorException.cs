@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary.BoGodtExceptions
 {
-    class RoomDoorException:Exception
+    public class OnlyOneDoorException
     {
-        
-        public RoomDoorException()
+        public OnlyOneDoorException()
             : base()
         {
 
