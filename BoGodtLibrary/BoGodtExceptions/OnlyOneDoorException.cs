@@ -13,6 +13,5 @@ namespace BoGodtLibrary.BoGodtExceptions
         {
 
         }
-        
     }
 }

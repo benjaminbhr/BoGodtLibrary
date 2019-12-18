@@ -8,14 +8,9 @@ namespace BoGodtLibrary.BoGodtExceptions
 {
     class RoomDoorException:Exception
     {
-        public RoomDoorException()
-            :base()
-        {
-
-        }
         
-        public RoomDoorException(string roomDoorMessage)
-            :base(roomDoorMessage)
+        public RoomDoorException()
+            : base()
         {
 
         }
