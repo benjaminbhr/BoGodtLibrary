@@ -18,9 +18,12 @@ namespace BoGodtLibrary
         }
 
 
-        public Bathroom()
+        public Bathroom(IMasterWindow window, IMasterDoor door, IMasterFloor floor)
+        : base()
         {
-
+            this.windows.Add(window);
+            this.doors.Add(door);
+            this.floors.Add(floor);
         }
 
         public void AddWindow(IMasterWindow bathRoomWindow)
