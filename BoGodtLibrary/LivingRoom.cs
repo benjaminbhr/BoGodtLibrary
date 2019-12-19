@@ -15,6 +15,11 @@ namespace BoGodtLibrary
             throw new NotImplementedException();
         }
 
+        public override void AddDoors(IMasterDoor door)
+        {
+            throw new NotImplementedException();
+        }
+
         public override ERoomType GetRoomType()
         {
             return ERoomType.LivingRoom;

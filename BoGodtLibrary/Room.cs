@@ -38,5 +38,10 @@ namespace BoGodtLibrary
             Console.WriteLine("New window were added to the room!");
         }
 
+        public override void AddDoors(IMasterDoor door)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

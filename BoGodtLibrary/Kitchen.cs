@@ -37,7 +37,11 @@ namespace BoGodtLibrary
             floor.SetFloorType = EFloorType.Linoleum;
             this.floors.Add(floor);
         }
-        
-        
+
+        public override void AddDoors(IMasterDoor door)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
