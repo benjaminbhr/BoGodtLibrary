@@ -35,22 +35,14 @@ namespace BoGodtLibrary
             set => DoorLockable = value;
         }
 
-        List<IMasterDoor> doors = new List<IMasterDoor>();
+        List<IMasterDoor> roomdoors = new List<IMasterDoor>();
         public void AddDoors(EDoorType doorType)
         {
             switch (doorType)
             {
-                case EDoorType.FrontDoor:
-                    IMasterDoor frontdoor = new FrontDoor();
-                    doors.Add(frontdoor);
-                    break;
-                case EDoorType.BackDoor:
-                    IMasterDoor backdoor = new BackDoor();
-                    doors.Add(backdoor);
-                    break;
                 case EDoorType.RoomDoor:
                     IMasterDoor roomdoor = new RoomDoor();
-                    doors.Add(roomdoor);
+                    roomdoors.Add(roomdoor);
                         break;
                 default:
                     break;
