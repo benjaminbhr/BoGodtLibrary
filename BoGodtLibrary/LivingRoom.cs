@@ -10,6 +10,11 @@ namespace BoGodtLibrary
 {
     public class LivingRoom : MasterRoom
     {
+        public override void AddWindows()
+        {
+            throw new NotImplementedException();
+        }
+
         public override ERoomType GetRoomType()
         {
             return ERoomType.LivingRoom;

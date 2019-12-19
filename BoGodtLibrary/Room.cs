@@ -37,5 +37,10 @@ namespace BoGodtLibrary
             windows.Add(roomwindow);
             Console.WriteLine("New window were added to the room!");
         }
+
+        public override void AddWindows()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
