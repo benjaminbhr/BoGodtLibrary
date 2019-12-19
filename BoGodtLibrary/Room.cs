@@ -53,7 +53,7 @@ namespace BoGodtLibrary
 
         public override void AddFloor(IMasterFloor roomfloor)
         {
-            if (doors.Count + 1 > 1)
+            if (floors.Count + 1 > 1)
             {
                 throw new BoGodtExceptions.OnlyOneFloorException();
             }
@@ -61,8 +61,5 @@ namespace BoGodtLibrary
             floors.Add(roomfloor);
             Console.WriteLine("Floor was added!");
         }
-
-
-
     }
 }
