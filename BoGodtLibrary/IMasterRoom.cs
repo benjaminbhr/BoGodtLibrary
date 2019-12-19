@@ -8,7 +8,7 @@ namespace BoGodtLibrary
 {
     public interface IMasterRoom
     {
-        void AddWindows();
+        void AddWindows(IMasterWindow window);
         void AddDoors();
         ERoomType GetRoomType();
         List<IMasterWindow> GetWindows();
