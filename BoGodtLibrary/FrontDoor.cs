@@ -10,7 +10,7 @@ namespace BoGodtLibrary
     {
         public override EDoorType GetDoorType()
         {
-            return EDoorType.FrontDoor;
+            return EDoorType.RoomDoor;
         }
 
         public FrontDoor()
