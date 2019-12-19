@@ -16,6 +16,11 @@ namespace BoGodtLibrary
             get => doors.Count;
         }
 
+        public int windowcount
+        {
+            get => windows.Count;
+        }
+
 
         public override ERoomType GetRoomType()
         {
