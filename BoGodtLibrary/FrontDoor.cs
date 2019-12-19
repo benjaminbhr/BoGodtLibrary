@@ -12,10 +12,5 @@ namespace BoGodtLibrary
         {
             return EDoorType.RoomDoor;
         }
-
-        public FrontDoor()
-        {
-
-        }
     }
 }

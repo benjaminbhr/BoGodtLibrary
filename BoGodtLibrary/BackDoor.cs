@@ -13,10 +13,5 @@ namespace BoGodtLibrary
         {
             return EDoorType.BackDoor;
         }
-        
-        public BackDoor()
-        {
-
-        }
     }
 }
