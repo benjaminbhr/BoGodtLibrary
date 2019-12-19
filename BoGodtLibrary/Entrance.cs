@@ -17,13 +17,9 @@ namespace BoGodtLibrary
         public Entrance()
         {
             IMasterDoor entrancedoor = new FrontDoor();
-            entrancedoor.SetDoorLockable = true;
-            entrancedoor.SetDoorOpen = true;
+            entrancedoor.DoorLockable = true;
+            entrancedoor.DoorOpen = true;
             doors.Add(entrancedoor);
-
-            IMasterFloor floor = new Floor();
-            floors.Add(floor);
-
         }
 
         public void AddRoomDoors()
@@ -55,12 +51,17 @@ namespace BoGodtLibrary
 
         public override void AddWindows(IMasterWindow window)
         {
-            throw new NotImplementedException();
+            throw new NoWindowsException();
         }
 
         public override void AddDoors(IMasterDoor door)
         {
-            throw new NotImplementedException();
+            throw new OnlyOneFrontDoorException();
+        }
+
+        public override void AddFloor(IMasterFloor floor)
+        {
+            floors.Add(floor);
         }
     }
 }
