@@ -57,5 +57,10 @@ namespace BoGodtLibrary
         {
             throw new NotImplementedException();
         }
+
+        public override void AddDoors()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
