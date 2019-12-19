@@ -32,6 +32,7 @@ namespace BoGodtLibrary
 
             IMasterFloor floor = new Floor();
             floor.SetFloorType = EFloorType.Tile;
+            floors.Add(floor);
         }
 
         public override void AddWindows(IMasterWindow window)
@@ -40,11 +41,11 @@ namespace BoGodtLibrary
         }
         public override void AddDoors(IMasterDoor door)
         {
-            throw new BoGodtExceptions.OnlyOneFloorException();
+            throw new BoGodtExceptions.OnlyOneRoomDoorException();
         }
         public override void AddFloor(IMasterFloor floor)
         {
-            throw new BoGodtExceptions.CantBeThisFloorTypeException();
+            throw new BoGodtExceptions.OnlyOneFloorException();
         }
 
     }
