@@ -25,22 +25,26 @@ namespace BoGodtLibrary
             floors.Add(floor);
 
         }
-        
+
         public void AddRoomDoors()
         {
-
-        }
-
-        public void AddFrontDoors()
-        {
-            if (doors.Count > 1)
+            if (doors.Count > 3)
             {
-                throw new OnlyOneFrontDoorException();
+                throw new OnlyFourRoomDoorsException();
+            }
+            if (doors.Count <= 0)
+            {
+                throw new MinimumOneRoomDoorException();
             }
             else
             {
-                doors.Add(new FrontDoor());
+                doors.Add(new RoomDoor());
             }
+        }
+
+        public void AddFrontDoor()
+        {
+
         }
 
         //Do we need this? And the interface at all?
@@ -50,6 +54,11 @@ namespace BoGodtLibrary
         }
 
         public override void AddWindows(IMasterWindow window)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void AddDoors()
         {
             throw new NotImplementedException();
         }

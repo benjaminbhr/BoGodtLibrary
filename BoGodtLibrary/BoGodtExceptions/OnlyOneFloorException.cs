@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary.BoGodtExceptions
 {
-    public class OnlyOneDoorException
+    public class OnlyOneFloorException:Exception
     {
-        public OnlyOneDoorException()
-            : base()
+        public OnlyOneFloorException()
+            :base()
         {
 
         }

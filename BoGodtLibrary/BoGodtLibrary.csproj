@@ -42,16 +42,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoGodtExceptions\BathroomException.cs" />
-    <Compile Include="BoGodtExceptions\MaximumRoomDoorsException.cs" />
+    <Compile Include="BoGodtExceptions\MaxRoomsException.cs" />
     <Compile Include="BoGodtExceptions\MinimumOneWindowException.cs" />
+    <Compile Include="BoGodtExceptions\MinimumOneRoomDoorException.cs" />
     <Compile Include="BoGodtExceptions\OnlyFiveWindowsException.cs" />
+    <Compile Include="BoGodtExceptions\OnlyFourRoomDoorsException.cs" />
     <Compile Include="BoGodtExceptions\OnlyOneBackDoorException.cs" />
     <Compile Include="BoGodtExceptions\CantBeThisFloorTypeException.cs" />
+    <Compile Include="BoGodtExceptions\OnlyOneFloorException.cs" />
+    <Compile Include="BoGodtExceptions\OnlyOneRoomDoorException.cs" />
     <Compile Include="BoGodtExceptions\OnlyOneWindowException.cs" />
     <Compile Include="BoGodtExceptions\OnlyOneFrontDoorException.cs" />
+    <Compile Include="BoGodtExceptions\OnlyThreeRoomDoorsException.cs" />
+    <Compile Include="BoGodtExceptions\OnlyTwoRoomDoorsException.cs" />
     <Compile Include="BoGodtExceptions\RoomDoorException.cs" />
     <Compile Include="BoGodtExceptions\WindowsException.cs" />
-    <Compile Include="BoGodtExceptions\MinimumRoomDoorsException.cs" />
     <Compile Include="BackDoor.cs" />
     <Compile Include="Bathroom.cs" />
     <Compile Include="ColorEnum.cs" />
