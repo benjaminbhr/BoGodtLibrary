@@ -29,7 +29,9 @@ namespace BoGodtLibrary
             }
         }
 
-        public override void AddDoors()
+        
+
+        public override void AddDoors(IMasterDoor door)
         {
             throw new NotImplementedException();
         }
