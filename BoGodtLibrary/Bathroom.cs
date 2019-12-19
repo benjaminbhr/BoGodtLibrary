@@ -40,7 +40,7 @@ namespace BoGodtLibrary
         }
         public override void AddDoors(IMasterDoor door)
         {
-            throw new BoGodtExceptions.OnlyOneRoomDoorException();
+            throw new BoGodtExceptions.OnlyOneFloorException();
         }
         public override void AddFloor(IMasterFloor floor)
         {
