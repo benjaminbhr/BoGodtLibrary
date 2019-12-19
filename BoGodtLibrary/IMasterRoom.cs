@@ -10,6 +10,7 @@ namespace BoGodtLibrary
     {
         void AddWindows(IMasterWindow window);
         void AddDoors(IMasterDoor door);
+        void AddFloor(IMasterFloor floor);
         ERoomType GetRoomType();
         List<IMasterWindow> GetWindows();
         List<IMasterFloor> GetFloorType();
