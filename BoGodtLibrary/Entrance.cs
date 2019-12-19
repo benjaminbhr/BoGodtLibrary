@@ -22,11 +22,11 @@ namespace BoGodtLibrary
             doors.Add(entrancedoor);
         }
 
-        public void AddRoomDoors()
+        public void AddDoors()
         {
             if (doors.Count > 3)
             {
-                throw new OnlyFourRoomDoorsException();
+                throw new OnlyThreeRoomDoorsException();
             }
             if (doors.Count <= 0)
             {
@@ -36,11 +36,6 @@ namespace BoGodtLibrary
             {
                 doors.Add(new RoomDoor());
             }
-        }
-
-        public void AddFrontDoor()
-        {
-
         }
 
         //Do we need this? And the interface at all?
