@@ -5,13 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace BoGodtLibrary
-{
-
-    
+{    
     public class Kitchen : MasterRoom, IKitchen
     {
-
-     
+   
         public override ERoomType GetRoomType()
         {
             return ERoomType.Kitchen;
@@ -31,7 +28,7 @@ namespace BoGodtLibrary
             }
             else
             {
-                windows.Add(new SmallWindow());               
+                windows.Add(window);               
             }
         }
 
