@@ -28,6 +28,7 @@ namespace BoGodtLibrary
                 MaxWindows++;
             }
         }
+
         int MaxWindows = 0;
 
           public Kitchen(IMasterFloor floor)
