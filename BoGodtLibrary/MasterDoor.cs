@@ -21,6 +21,12 @@ namespace BoGodtLibrary
 
         public abstract EDoorType GetDoorType();
 
+        public EDoorType getDoorType
+        {
+            get;
+            set;
+        }
+
         private bool _DoorOpen = true;
         public bool DoorOpen
         {

@@ -3,15 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BoGodtLibrary.BoGodtExceptions;
+
 
 namespace BoGodtLibrary
-{
-
-    
+{    
     public class Kitchen : MasterRoom, IKitchen
     {
-
-     
+        public Kitchen()
+        {
+            IMasterDoor backdoor = new BackDoor();
+            backdoor.getDoorType = EDoorType.BackDoor;
+            backdoor.DoorLockable = true;
+            backdoor.DoorOpen = true;
+            doors.Add(backdoor);
+        }
+   
         public override ERoomType GetRoomType()
         {
             return ERoomType.Kitchen;
@@ -20,33 +27,32 @@ namespace BoGodtLibrary
         {
             return true;
         }
+
+        //This decides what max windows for kitchen is
+        private const int MAX_WINDOWS = 3;
+
         public override void AddWindows(IMasterWindow window)
         {
-            if (MaxWindows >= 1)
+            
+            if (windows.Count + 1 > MAX_WINDOWS)
             {
-                throw new Exception("Too many windows :(");
+                throw new MaxThreeWindowsException();
             }
             else
             {
-                windows.Add(new SmallWindow());
-                MaxWindows++;
+                windows.Add(window);               
             }
         }
-
-        
+       
         public override void AddDoors(IMasterDoor door)
         {
             throw new NotImplementedException();
         }
-
-        int MaxWindows = 0;
 
         public override void AddFloor(IMasterFloor floor)
         {
             floor.FloorType = EFloorType.Linoleum;
             this.floors.Add(floor);
         }
-
-
     }
 }

@@ -9,6 +9,10 @@ namespace BoGodtLibrary
 {
     public class Entrance : MasterRoom
     {
+        public int doorcount
+        {
+            get => doors.Count;
+        }
         public override ERoomType GetRoomType()
         {
             return ERoomType.Entrance;
@@ -17,12 +21,16 @@ namespace BoGodtLibrary
         public Entrance()
         {
             IMasterDoor entrancedoor = new FrontDoor();
+            entrancedoor.getDoorType = EDoorType.FrontDoor;
             entrancedoor.DoorLockable = true;
             entrancedoor.DoorOpen = true;
             doors.Add(entrancedoor);
+
+            IMasterFloor entrancefloor = new Floor();
+            floors.Add(entrancefloor);
         }
 
-        public void AddDoors()
+        public void AddRoomDoors()
         {
             if (doors.Count > 3)
             {
