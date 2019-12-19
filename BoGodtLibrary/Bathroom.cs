@@ -9,8 +9,11 @@ namespace BoGodtLibrary
 {
     public class Bathroom : MasterRoom
     {
-        public int WindowCount = windows.Count;
         private const int MAX_WINDOWS = 1;
+        public int windowCount
+        {
+            get => windows.Count();
+        }
         public override ERoomType GetRoomType()
         {
             return ERoomType.Bathroom;
@@ -26,7 +29,7 @@ namespace BoGodtLibrary
 
         }
 
-        public override void AddWindows()
+        public override void AddWindows(IMasterWindow window)
         {
             throw new BoGodtExceptions.OnlyOneWindowsException();
         }

@@ -10,7 +10,7 @@ namespace BoGodtLibrary
 {
     public class LivingRoom : MasterRoom
     {
-        public override void AddWindows()
+        public override void AddWindows(IMasterWindow window)
         {
             throw new NotImplementedException();
         }
