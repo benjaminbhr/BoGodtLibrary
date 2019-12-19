@@ -26,6 +26,9 @@ namespace BoGodtLibrary
             window.windowFrosted = true;
             window.windowOpen = false;
             windows.Add(window);
+
+            IMasterDoor door = new RoomDoor();
+            
         }
 
         public override void AddWindows(IMasterWindow window)
@@ -34,7 +37,11 @@ namespace BoGodtLibrary
         }
         public override void AddDoors(IMasterDoor door)
         {
-            doors.Add(door);
+            throw new BoGodtExceptions.OnlyOneRoomDoorException();
+        }
+        public override void AddFloor(IMasterFloor floor)
+        {
+            throw new BoGodtExceptions.CantBeThisFloorTypeException();
         }
 
     }
