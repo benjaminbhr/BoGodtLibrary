@@ -8,6 +8,14 @@ namespace BoGodtLibrary
 {    
     public class Kitchen : MasterRoom, IKitchen
     {
+        public Kitchen()
+        {
+            IMasterDoor backdoor = new BackDoor();
+            backdoor.getDoorType = EDoorType.BackDoor;
+            backdoor.DoorLockable = true;
+            backdoor.DoorOpen = true;
+            doors.Add(backdoor);
+        }
    
         public override ERoomType GetRoomType()
         {
@@ -31,14 +39,11 @@ namespace BoGodtLibrary
                 windows.Add(window);               
             }
         }
-
-        
+       
         public override void AddDoors(IMasterDoor door)
         {
             throw new NotImplementedException();
         }
-
-      
 
         public override void AddFloor(IMasterFloor floor)
         {
