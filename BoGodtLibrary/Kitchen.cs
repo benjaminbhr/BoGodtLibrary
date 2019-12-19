@@ -43,7 +43,7 @@ namespace BoGodtLibrary
 
         public override void AddFloor(IMasterFloor floor)
         {
-            floor.SetFloorType = EFloorType.Linoleum;
+            floor.FloorType = EFloorType.Linoleum;
             this.floors.Add(floor);
         }
 
