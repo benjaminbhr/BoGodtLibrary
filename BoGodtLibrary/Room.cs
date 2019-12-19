@@ -10,15 +10,17 @@ namespace BoGodtLibrary
     public class Room : MasterRoom
     {
         private const int MAX_WINDOWS = 5;
-        private const int MIN_WINDOWS = 4;
         public override ERoomType GetRoomType()
         {
             return ERoomType.Room;
         }
 
-        public Room() 
+        public Room(IMasterWindow window, IMasterDoor door, IMasterFloor floor)
+            : base()
         {
-            
+            this.windows.Add(window);
+            this.doors.Add(door);
+            this.floors.Add(floor);
         }
 
         public void addWindow(IMasterWindow roomwindow) 
