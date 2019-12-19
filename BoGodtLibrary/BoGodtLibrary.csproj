@@ -66,6 +66,7 @@
     <Compile Include="Entrance.cs" />
     <Compile Include="Floor.cs" />
     <Compile Include="FloorTypeEnum.cs" />
+    <Compile Include="IBathroom.cs" />
     <Compile Include="IEntrance.cs" />
     <Compile Include="IMasterFloor.cs" />
     <Compile Include="IKitchen.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="IMasterWindow.cs" />
     <Compile Include="IMediumWindow.cs" />
     <Compile Include="LivingRoom.cs" />
+    <Compile Include="MasterApartment.cs" />
     <Compile Include="MasterFloor.cs" />
     <Compile Include="Room.cs" />
     <Compile Include="RoomDoor.cs" />
@@ -87,6 +89,7 @@
     <Compile Include="MediumWindow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SmallWindow.cs" />
+    <Compile Include="Studio.cs" />
     <Compile Include="WindowCasementEnum.cs" />
     <Compile Include="WindowMaterialEnum.cs" />
     <Compile Include="WindowTypeEnum.cs" />

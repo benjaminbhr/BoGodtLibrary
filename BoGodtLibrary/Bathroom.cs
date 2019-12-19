@@ -7,8 +7,12 @@ using BoGodtLibrary.BoGodtExceptions;
 
 namespace BoGodtLibrary
 {
-    public class Bathroom : MasterRoom
+    public class Bathroom : MasterRoom,IBathroom
     {
+        public List<IMasterWindow> GetWindows()
+        {
+            return windows;
+        }
         private const int MAX_WINDOWS = 1;
         public int windowCount
         {
@@ -41,11 +45,11 @@ namespace BoGodtLibrary
         }
         public override void AddDoors(IMasterDoor door)
         {
-            throw new BoGodtExceptions.OnlyOneFloorException();
+            throw new BoGodtExceptions.OnlyOneRoomDoorException();
         }
         public override void AddFloor(IMasterFloor floor)
         {
-            throw new BoGodtExceptions.CantBeThisFloorTypeException();
+            throw new BoGodtExceptions.OnlyOneFloorException();
         }
 
     }
