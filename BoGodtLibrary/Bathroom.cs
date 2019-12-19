@@ -9,35 +9,27 @@ namespace BoGodtLibrary
 {
     public class Bathroom : MasterRoom
     {
-
+        public int WindowCount = windows.Count;
         private const int MAX_WINDOWS = 1;
-        public IMasterWindow smallwindow = new SmallWindow();
         public override ERoomType GetRoomType()
         {
             return ERoomType.Bathroom;
         }
 
-
-        public Bathroom(IMasterWindow window, IMasterDoor door, IMasterFloor floor)
-        : base()
+        public Bathroom()
         {
-            this.windows.Add(window);
-            this.doors.Add(door);
-            this.floors.Add(floor);
+            IMasterWindow window = new SmallWindow();
+            window.windowCasement = EWindowCasement.CasementOne;
+            window.windowFrosted = true;
+            window.windowOpen = false;
+            windows.Add(window);
+
         }
 
-        public void AddWindow(IMasterWindow bathRoomWindow)
+        public override void AddWindows()
         {
-
-            if (windows.Count + 1 > MAX_WINDOWS)
-            {
-                throw new BoGodtExceptions.OnlyOneWindowsException();
-            }
-            bathRoomWindow.windowFrosted = false;
-            bathRoomWindow.windowOpen = true;
-            windows.Add(bathRoomWindow);
-            Console.WriteLine("windows.count: " + (windows.Count));
-            Console.WriteLine("New window were added to the room!");
+            throw new BoGodtExceptions.OnlyOneWindowsException();
         }
+
     }
 }
