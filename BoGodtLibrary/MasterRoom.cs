@@ -8,19 +8,20 @@ namespace BoGodtLibrary
 {
     public abstract class MasterRoom : IMasterRoom
     {
+        public abstract void AddWindows();
         public abstract ERoomType GetRoomType();
 
-        public List<IMasterWindow> windows = new List<IMasterWindow>();
+        protected List<IMasterWindow> windows = new List<IMasterWindow>();
         public List<IMasterWindow> GetWindows()
         {
             return windows;
         }
-        public List<IMasterDoor> doors = new List<IMasterDoor>();
+        protected List<IMasterDoor> doors = new List<IMasterDoor>();
         public List<IMasterDoor> GetDoors()
         {
             return doors;
         }
-        public List<IMasterFloor> floors = new List<IMasterFloor>();
+        protected List<IMasterFloor> floors = new List<IMasterFloor>();
         public List<IMasterFloor> GetFloorType()
         {
             return floors;
