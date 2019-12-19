@@ -41,7 +41,7 @@ namespace BoGodtLibrary
 
         public override void AddDoors(IMasterDoor roomdoor)
         {
-            if (doors.Count + 1 >= EXACT_DOORS)
+            if (doors.Count + 1 > EXACT_DOORS)
             {
                 throw new BoGodtExceptions.OnlyOneRoomDoorException();
             }
@@ -53,9 +53,16 @@ namespace BoGodtLibrary
 
         public override void AddFloor(IMasterFloor roomfloor)
         {
+            if (doors.Count + 1 > 1)
+            {
+                throw new BoGodtExceptions.OnlyOneFloorException();
+            }
+
             floors.Add(roomfloor);
             Console.WriteLine("Floor was added!");
         }
+
+
 
     }
 }
