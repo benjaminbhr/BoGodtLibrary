@@ -51,9 +51,10 @@ namespace BoGodtLibrary
             Console.WriteLine("A door was added!");
         }
 
-        public override void AddFloor(IMasterFloor floor)
+        public override void AddFloor(IMasterFloor roomfloor)
         {
-            throw new NotImplementedException();
+            floors.Add(roomfloor);
+            Console.WriteLine("Floor was added!");
         }
 
     }
