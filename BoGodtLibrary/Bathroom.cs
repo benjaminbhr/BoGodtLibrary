@@ -11,7 +11,6 @@ namespace BoGodtLibrary
     {
 
         private const int MAX_WINDOWS = 1;
-        public IMasterWindow smallwindow = new SmallWindow();
         public override ERoomType GetRoomType()
         {
             return ERoomType.Bathroom;
