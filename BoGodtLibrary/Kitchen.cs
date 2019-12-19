@@ -30,13 +30,13 @@ namespace BoGodtLibrary
         }
         int MaxWindows = 0;
 
-        //  public Kitchen(IMasterFloor floor)
-        //: base()
-        //{
-        //  this.floors.Add(floor.SetFloorType);
-
-        //}
-        IMasterRoom floorType = new Kitchen();
+          public Kitchen(IMasterFloor floor)
+        : base()
+        {
+            floor.SetFloorType = EFloorType.Linoleum;
+            this.floors.Add(floor);
+        }
+        
         
     }
 }
