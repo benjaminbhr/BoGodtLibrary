@@ -9,6 +9,11 @@ namespace BoGodtLibrary
     public interface IMasterDoor
     {
         EDoorType GetDoorType();
+        EDoorType getDoorType
+        {
+            get;
+            set;
+        }
         EDoorMaterial DoorMaterial
         {
             get;

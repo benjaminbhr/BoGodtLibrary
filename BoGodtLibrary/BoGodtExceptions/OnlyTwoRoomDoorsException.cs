@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary.BoGodtExceptions
 {
-    class OnlyTwoRoomDoorsException:Exception
+    public class OnlyTwoRoomDoorsException:Exception
     {
         private const string TWOROOMDOORSEXCEPTION = "There can only be a maximum of two room doors";
         public OnlyTwoRoomDoorsException()
