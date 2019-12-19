@@ -24,7 +24,7 @@ namespace BoGodtLibrary
             return doors;
         }
         protected List<IMasterFloor> floors = new List<IMasterFloor>();
-        public List<IMasterFloor> GetFloorType()
+        public List<IMasterFloor> GetFloor()
         {
             return floors;
         }
