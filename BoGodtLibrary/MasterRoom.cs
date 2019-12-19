@@ -9,7 +9,7 @@ namespace BoGodtLibrary
     public abstract class MasterRoom : IMasterRoom
     {
         public abstract void AddWindows(IMasterWindow window);
-        public abstract void AddDoors();
+        public abstract void AddDoors(IMasterDoor door);
         public abstract ERoomType GetRoomType();
 
         protected List<IMasterWindow> windows = new List<IMasterWindow>();
