@@ -10,6 +10,7 @@ namespace BoGodtLibrary
     public class Room : MasterRoom
     {
         private const int MAX_WINDOWS = 5;
+        private const int EXACT_DOORS = 1;
         public override ERoomType GetRoomType()
         {
             return ERoomType.Room;
@@ -38,9 +39,16 @@ namespace BoGodtLibrary
             Console.WriteLine("New window were added to the room!");
         }
 
-        public override void AddDoors(IMasterDoor door)
+        public override void AddDoors(IMasterDoor roomdoor)
         {
-            throw new NotImplementedException();
+            if (doors.Count + 1 >= EXACT_DOORS)
+            {
+                throw new BoGodtExceptions.OnlyOneRoomDoorException();
+            }
+
+            Console.WriteLine("doors.Count: " + (doors.Count));
+            doors.Add(roomdoor);
+            Console.WriteLine("A door was added!");
         }
 
     }
