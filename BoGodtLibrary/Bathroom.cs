@@ -26,12 +26,15 @@ namespace BoGodtLibrary
             window.windowFrosted = true;
             window.windowOpen = false;
             windows.Add(window);
-
         }
 
         public override void AddWindows(IMasterWindow window)
         {
             throw new BoGodtExceptions.OnlyOneWindowsException();
+        }
+        public override void AddDoors(IMasterDoor door)
+        {
+            doors.Add(door);
         }
 
     }
