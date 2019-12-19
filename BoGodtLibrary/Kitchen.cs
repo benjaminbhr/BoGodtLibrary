@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BoGodtLibrary.BoGodtExceptions;
+
 
 namespace BoGodtLibrary
 {    
@@ -26,13 +28,15 @@ namespace BoGodtLibrary
             return true;
         }
 
+        //This decides what max windows for kitchen is
         private const int MAX_WINDOWS = 3;
+
         public override void AddWindows(IMasterWindow window)
         {
             
             if (windows.Count + 1 > MAX_WINDOWS)
             {
-                throw new BoGodtExceptions.MaxThreeWindowsException();
+                throw new MaxThreeWindowsException();
             }
             else
             {
@@ -50,7 +54,5 @@ namespace BoGodtLibrary
             floor.FloorType = EFloorType.Linoleum;
             this.floors.Add(floor);
         }
-
-
     }
 }
