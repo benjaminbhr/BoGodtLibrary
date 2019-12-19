@@ -20,11 +20,18 @@ namespace BoGodtLibrary
             throw new NotImplementedException();
         }
 
+        public override void AddFloor(IMasterFloor floor)
+        {
+            throw new NotImplementedException();
+        }
+
         public override ERoomType GetRoomType()
         {
             return ERoomType.LivingRoom;
         }
-        
+
+
+
 
     }
 }
