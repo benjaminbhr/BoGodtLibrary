@@ -17,20 +17,16 @@ namespace BoGodtLibrary
         public Entrance()
         {
             IMasterDoor entrancedoor = new FrontDoor();
-            entrancedoor.SetDoorLockable = true;
-            entrancedoor.SetDoorOpen = true;
+            entrancedoor.DoorLockable = true;
+            entrancedoor.DoorOpen = true;
             doors.Add(entrancedoor);
-
-            IMasterFloor floor = new Floor();
-            floors.Add(floor);
-
         }
 
-        public void AddRoomDoors()
+        public void AddDoors()
         {
             if (doors.Count > 3)
             {
-                throw new OnlyFourRoomDoorsException();
+                throw new OnlyThreeRoomDoorsException();
             }
             if (doors.Count <= 0)
             {
@@ -42,11 +38,6 @@ namespace BoGodtLibrary
             }
         }
 
-        public void AddFrontDoor()
-        {
-
-        }
-
         //Do we need this? And the interface at all?
         public void MyMethod(ERoomType Entrance)
         {
@@ -55,12 +46,17 @@ namespace BoGodtLibrary
 
         public override void AddWindows(IMasterWindow window)
         {
-            throw new NotImplementedException();
+            throw new NoWindowsException();
         }
 
         public override void AddDoors(IMasterDoor door)
         {
-            throw new NotImplementedException();
+            throw new OnlyOneFrontDoorException();
+        }
+
+        public override void AddFloor(IMasterFloor floor)
+        {
+            floors.Add(floor);
         }
     }
 }
