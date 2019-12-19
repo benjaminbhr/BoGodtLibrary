@@ -52,5 +52,10 @@ namespace BoGodtLibrary
         {
             throw new NotImplementedException();
         }
+
+        public override void AddWindows()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

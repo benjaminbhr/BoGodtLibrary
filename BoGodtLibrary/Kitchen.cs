@@ -16,7 +16,7 @@ namespace BoGodtLibrary
         {
             return true;
         }
-        public void AddWindows()
+        public override void AddWindows()
         {
             if (MaxWindows >= 1)
             {
@@ -29,5 +29,14 @@ namespace BoGodtLibrary
             }
         }
         int MaxWindows = 0;
+
+        //  public Kitchen(IMasterFloor floor)
+        //: base()
+        //{
+        //  this.floors.Add(floor.SetFloorType);
+
+        //}
+        IMasterRoom floorType = new Kitchen();
+        
     }
 }

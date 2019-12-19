@@ -8,6 +8,7 @@ namespace BoGodtLibrary
 {
     public abstract class MasterWindow : IMasterWindow
     {
+
         public abstract EWindowCasement GetWindowCasement();
 
         private bool _windowOpen = true;
