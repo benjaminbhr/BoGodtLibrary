@@ -27,11 +27,21 @@ namespace BoGodtLibrary
             window.windowOpen = false;
             windows.Add(window);
 
+            IMasterDoor door = new RoomDoor();
+            
         }
 
         public override void AddWindows(IMasterWindow window)
         {
             throw new BoGodtExceptions.OnlyOneWindowsException();
+        }
+        public override void AddDoors(IMasterDoor door)
+        {
+            throw new BoGodtExceptions.OnlyOneRoomDoorException();
+        }
+        public override void AddFloor(IMasterFloor floor)
+        {
+            throw new BoGodtExceptions.CantBeThisFloorTypeException();
         }
 
     }
