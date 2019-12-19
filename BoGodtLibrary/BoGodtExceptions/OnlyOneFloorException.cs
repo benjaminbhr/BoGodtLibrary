@@ -8,8 +8,9 @@ namespace BoGodtLibrary.BoGodtExceptions
 {
     public class OnlyOneFloorException:Exception
     {
+        private const string ONLYONEFLOOR = "There can only be one floor in a room .. How tf did you add another one? Brah .. ";
         public OnlyOneFloorException()
-            :base()
+            :base(ONLYONEFLOOR)
         {
 
         }
