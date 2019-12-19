@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BoGodtExceptions\BathroomException.cs" />
     <Compile Include="BoGodtExceptions\MaxRoomsException.cs" />
+    <Compile Include="BoGodtExceptions\MaxThreeWindowsException.cs" />
     <Compile Include="BoGodtExceptions\MinimumOneWindowException.cs" />
     <Compile Include="BoGodtExceptions\MinimumOneRoomDoorException.cs" />
     <Compile Include="BoGodtExceptions\NoWindowsException.cs" />

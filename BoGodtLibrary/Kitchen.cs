@@ -20,16 +20,18 @@ namespace BoGodtLibrary
         {
             return true;
         }
+
+        private const int MAX_WINDOWS = 3;
         public override void AddWindows(IMasterWindow window)
         {
-            if (MaxWindows >= 1)
+            
+            if (windows.Count + 1 > MAX_WINDOWS)
             {
-                throw new Exception("Too many windows :(");
+                throw new BoGodtExceptions.MaxThreeWindowsException();
             }
             else
             {
-                windows.Add(new SmallWindow());
-                MaxWindows++;
+                windows.Add(new SmallWindow());               
             }
         }
 
@@ -39,7 +41,7 @@ namespace BoGodtLibrary
             throw new NotImplementedException();
         }
 
-        int MaxWindows = 0;
+      
 
         public override void AddFloor(IMasterFloor floor)
         {
