@@ -13,6 +13,7 @@ namespace BoGodtLibrary
         void AddFloor(IMasterFloor floor);
         ERoomType GetRoomType();
         List<IMasterWindow> GetWindows();
-        List<IMasterFloor> GetFloorType();
+        List<IMasterFloor> GetFloor();
+        List<IMasterDoor> GetDoors();
     }
 }
