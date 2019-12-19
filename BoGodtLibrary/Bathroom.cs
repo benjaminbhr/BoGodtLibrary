@@ -28,7 +28,10 @@ namespace BoGodtLibrary
             windows.Add(window);
 
             IMasterDoor door = new RoomDoor();
-            
+            doors.Add(door);
+
+            IMasterFloor floor = new Floor();
+            floor.SetFloorType = EFloorType.Tile;
         }
 
         public override void AddWindows(IMasterWindow window)
