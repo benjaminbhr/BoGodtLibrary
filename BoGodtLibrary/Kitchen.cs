@@ -29,6 +29,12 @@ namespace BoGodtLibrary
             }
         }
 
+        
+        public override void AddDoors(IMasterDoor door)
+        {
+            throw new NotImplementedException();
+        }
+
         int MaxWindows = 0;
 
           public Kitchen(IMasterFloor floor)
