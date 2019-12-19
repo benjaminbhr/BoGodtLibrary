@@ -11,12 +11,7 @@ namespace BoGodtLibrary
     public class Kitchen : MasterRoom, IKitchen
     {
 
-        public int doorcount
-        {
-            get => doors.Count;
-        }
-
-
+     
         public override ERoomType GetRoomType()
         {
             return ERoomType.Kitchen;
