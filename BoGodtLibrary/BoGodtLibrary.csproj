@@ -56,7 +56,6 @@
     <Compile Include="BoGodtExceptions\OnlyOneFrontDoorException.cs" />
     <Compile Include="BoGodtExceptions\OnlyThreeRoomDoorsException.cs" />
     <Compile Include="BoGodtExceptions\OnlyTwoRoomDoorsException.cs" />
-    <Compile Include="BoGodtExceptions\RoomDoorException.cs" />
     <Compile Include="BoGodtExceptions\WindowsException.cs" />
     <Compile Include="BackDoor.cs" />
     <Compile Include="Bathroom.cs" />

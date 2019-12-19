@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary.BoGodtExceptions
 {
-    class MinimumOneRoomDoorException:Exception
+    public class MinimumOneRoomDoorException:Exception
     {
         private const string MINIMUMROOMDOORSEXCEPTION = "You must add at least one room door!";
         public MinimumOneRoomDoorException()
