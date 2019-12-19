@@ -34,7 +34,7 @@ namespace BoGodtLibrary
             get => _DoorLockable;
             set => _DoorLockable = value;
         }
-
+        /*
         List<IMasterDoor> roomdoors = new List<IMasterDoor>();
         public void AddDoors(EDoorType doorType)
         {
@@ -48,5 +48,6 @@ namespace BoGodtLibrary
                     break;
             }
         }
+        */
     }
 }

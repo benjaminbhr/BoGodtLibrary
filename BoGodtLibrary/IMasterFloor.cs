@@ -8,12 +8,12 @@ namespace BoGodtLibrary
 {
     public interface IMasterFloor
     {
-        EFloorType SetFloorType
+        EFloorType FloorType
         {
             get;
             set;
         }
-        EColor SetFloorColor
+        EColor FloorColor
         {
             get;
             set;

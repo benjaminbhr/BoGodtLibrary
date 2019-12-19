@@ -8,18 +8,18 @@ namespace BoGodtLibrary
 {
     public class MasterFloor : IMasterFloor
     {
-        private EFloorType floorType = EFloorType.Click;
-        public EFloorType SetFloorType 
+        private EFloorType _FloorType = EFloorType.Click;
+        public EFloorType FloorType 
         {
-            get => floorType;
-            set => floorType = value;
+            get => _FloorType;
+            set => _FloorType = value;
         }
 
-        private EColor floorColor = EColor.ColorWhite;
-        public EColor SetFloorColor
+        private EColor _FloorColor = EColor.ColorWhite;
+        public EColor FloorColor
         {
-            get => floorColor;
-            set => SetFloorColor = value;
+            get => _FloorColor;
+            set => _FloorColor = value;
         }
     }
 }
