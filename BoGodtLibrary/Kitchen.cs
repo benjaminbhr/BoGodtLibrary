@@ -16,7 +16,7 @@ namespace BoGodtLibrary
         {
             return true;
         }
-        public override void AddWindows()
+        public override void AddWindows(IMasterWindow window)
         {
             if (MaxWindows >= 1)
             {

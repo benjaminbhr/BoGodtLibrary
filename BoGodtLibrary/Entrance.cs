@@ -49,7 +49,7 @@ namespace BoGodtLibrary
             throw new NotImplementedException();
         }
 
-        public override void AddWindows()
+        public override void AddWindows(IMasterWindow window)
         {
             throw new NotImplementedException();
         }

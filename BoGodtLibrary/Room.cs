@@ -23,7 +23,7 @@ namespace BoGodtLibrary
             this.floors.Add(floor);
         }
 
-        public void addWindow(IMasterWindow roomwindow) 
+        public override void AddWindows(IMasterWindow roomwindow) 
         {
             
             if (windows.Count + 1 > MAX_WINDOWS)
@@ -38,9 +38,5 @@ namespace BoGodtLibrary
             Console.WriteLine("New window were added to the room!");
         }
 
-        public override void AddWindows()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
