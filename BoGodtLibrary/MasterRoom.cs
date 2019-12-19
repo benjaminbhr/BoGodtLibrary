@@ -10,6 +10,7 @@ namespace BoGodtLibrary
     {
         public abstract void AddWindows(IMasterWindow window);
         public abstract void AddDoors(IMasterDoor door);
+        public abstract void AddFloor(IMasterFloor floor);
         public abstract ERoomType GetRoomType();
 
         protected List<IMasterWindow> windows = new List<IMasterWindow>();
@@ -27,5 +28,7 @@ namespace BoGodtLibrary
         {
             return floors;
         }
+
+        
     }
 }
