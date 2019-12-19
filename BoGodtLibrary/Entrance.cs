@@ -22,11 +22,11 @@ namespace BoGodtLibrary
             doors.Add(entrancedoor);
         }
 
-        public void AddRoomDoors()
+        public void AddDoors()
         {
             if (doors.Count > 3)
             {
-                throw new OnlyFourRoomDoorsException();
+                throw new OnlyThreeRoomDoorsException();
             }
             if (doors.Count <= 0)
             {
@@ -38,27 +38,14 @@ namespace BoGodtLibrary
             }
         }
 
-        public void AddFrontDoor()
-        {
-
-        }
-
-        //Do we need this? And the interface at all?
-        public void MyMethod(ERoomType Entrance)
-        {
-            throw new NotImplementedException();
-        }
-
         public override void AddWindows(IMasterWindow window)
         {
             throw new NoWindowsException();
         }
-
         public override void AddDoors(IMasterDoor door)
         {
             throw new OnlyOneFrontDoorException();
         }
-
         public override void AddFloor(IMasterFloor floor)
         {
             floors.Add(floor);

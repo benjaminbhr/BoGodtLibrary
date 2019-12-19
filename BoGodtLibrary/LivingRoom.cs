@@ -12,9 +12,18 @@ namespace BoGodtLibrary
     {
         private const int MAX_WINDOWS = 5;
         private const int EXACT_DOORS = 1;
-        public override void AddWindows(IMasterWindow window)
+        public override void AddWindows(IMasterWindow livingroomwindow)
         {
-            throw new NotImplementedException();
+            if (windows.Count + 1 > MAX_WINDOWS)
+            {
+                throw new BoGodtExceptions.OnlyFiveWindowsException();
+            }
+
+            Console.WriteLine("windows.Count: " + (windows.Count));
+            livingroomwindow.windowFrosted = false;
+            livingroomwindow.windowOpen = true;
+            windows.Add(livingroomwindow);
+            Console.WriteLine("New window were added to the room!");
         }
 
         public override void AddDoors(IMasterDoor livingroomdoor)
