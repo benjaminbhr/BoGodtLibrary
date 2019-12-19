@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace BoGodtLibrary
 {
+
+    
     public class Kitchen : MasterRoom, IKitchen
     {
+
+        public int doorcount
+        {
+            get => doors.Count;
+        }
+
+
         public override ERoomType GetRoomType()
         {
             return ERoomType.Kitchen;
@@ -37,13 +46,12 @@ namespace BoGodtLibrary
 
         int MaxWindows = 0;
 
-          public Kitchen(IMasterFloor floor)
-        : base()
+        public override void AddFloor(IMasterFloor floor)
         {
             floor.SetFloorType = EFloorType.Linoleum;
             this.floors.Add(floor);
         }
-        
-        
+
+
     }
 }
